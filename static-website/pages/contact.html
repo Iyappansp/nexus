@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Contact Us - Get In Touch with NexusTech Solutions</title>
+  <meta name="description" content="Contact NexusTech for IT consulting, cloud solutions, and technology services. Reach our expert team via phone, email, or contact form.">
+  <meta name="keywords" content="contact NexusTech, IT consulting contact, get in touch, technology consultation">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" data-testid="main-navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-brand" data-testid="navbar-brand">
+        <i class="fas fa-rocket"></i> NexusTech
+      </a>
+      
+      <ul class="navbar-nav" data-testid="navbar-menu">
+        <li><a href="../index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="hero" data-testid="contact-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-testid="contact-title">Let's Start a Conversation</h1>
+        <p class="hero-description" data-testid="contact-description">
+          Whether you have a project in mind, need expert guidance, or just want to explore how we can help – we're here to listen and provide solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="section bg-light" data-testid="contact-info-section">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card text-center" data-testid="contact-phone">
+          <div class="card-icon" style="margin: 0 auto var(--space-3);">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3 class="card-title">Phone</h3>
+          <p class="card-text">
+            <a href="tel:+15551234567" style="color: var(--color-primary); font-weight: 600;">
+              +1 (555) 123-4567
+            </a>
+          </p>
+          <p class="card-text" style="font-size: var(--text-sm);">
+            Mon-Fri: 9AM - 6PM PST<br>
+            24/7 Emergency Support
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="contact-email">
+          <div class="card-icon" style="margin: 0 auto var(--space-3);">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3 class="card-title">Email</h3>
+          <p class="card-text">
+            <a href="mailto:info@nexustech.com" style="color: var(--color-primary); font-weight: 600;">
+              info@nexustech.com
+            </a>
+          </p>
+          <p class="card-text" style="font-size: var(--text-sm);">
+            General Inquiries<br>
+            <a href="mailto:sales@nexustech.com" style="color: var(--color-text-secondary);">sales@nexustech.com</a> - Sales<br>
+            <a href="mailto:support@nexustech.com" style="color: var(--color-text-secondary);">support@nexustech.com</a> - Support
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="contact-address">
+          <div class="card-icon" style="margin: 0 auto var(--space-3);">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3 class="card-title">Office</h3>
+          <p class="card-text" style="font-weight: 600;">
+            123 Tech Street<br>
+            San Francisco, CA 94105<br>
+            United States
+          </p>
+          <p class="card-text" style="font-size: var(--text-sm);">
+            Satellite offices in NY, London, Singapore
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section section-lg" data-testid="contact-form-section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: start;">
+        
+        <!-- Form Column -->
+        <div>
+          <div class="section-header" style="text-align: left; margin-bottom: var(--space-4);">
+            <span class="section-badge">Get In Touch</span>
+            <h2 class="section-title" style="font-size: var(--text-3xl);">Send Us a Message</h2>
+            <p class="section-description" style="text-align: left;">
+              Fill out the form below and our team will get back to you within 24 hours.
+            </p>
+          </div>
+          
+          <form data-validate data-testid="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="form-control" 
+                required 
+                minlength="2"
+                data-testid="form-name"
+                placeholder="John Doe"
+              >
+              <span class="form-error">Please enter your full name</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-control" 
+                required
+                data-testid="form-email"
+                placeholder="john.doe@company.com"
+              >
+              <span class="form-error">Please enter a valid email address</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                class="form-control"
+                data-testid="form-phone"
+                placeholder="+1 (555) 123-4567"
+              >
+              <span class="form-error">Please enter a valid phone number</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="company" class="form-label">Company Name</label>
+              <input 
+                type="text" 
+                id="company" 
+                name="company" 
+                class="form-control"
+                data-testid="form-company"
+                placeholder="Your Company"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="service" class="form-label">Service Interested In *</label>
+              <select 
+                id="service" 
+                name="service" 
+                class="form-control" 
+                required
+                data-testid="form-service"
+              >
+                <option value="">Select a service...</option>
+                <option value="cloud">Cloud Solutions</option>
+                <option value="consulting">IT Consulting</option>
+                <option value="security">Cybersecurity</option>
+                <option value="development">Custom Development</option>
+                <option value="ai">AI & Analytics</option>
+                <option value="support">24/7 Support</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error">Please select a service</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-control" 
+                required 
+                minlength="10"
+                data-testid="form-message"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+              <span class="form-error">Please provide more details (minimum 10 characters)</span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-testid="form-submit">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Info Column -->
+        <div>
+          <div class="card" data-testid="why-contact-card">
+            <h3 class="card-title">Why Choose NexusTech?</h3>
+            <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+              <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border);">
+                <i class="fas fa-check-circle text-primary" style="margin-right: var(--space-2);"></i>
+                <strong>Rapid Response:</strong> We respond to all inquiries within 24 hours
+              </li>
+              <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border);">
+                <i class="fas fa-check-circle text-primary" style="margin-right: var(--space-2);"></i>
+                <strong>Free Consultation:</strong> Initial discovery call at no cost
+              </li>
+              <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border);">
+                <i class="fas fa-check-circle text-primary" style="margin-right: var(--space-2);"></i>
+                <strong>Expert Guidance:</strong> Direct access to senior consultants
+              </li>
+              <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border);">
+                <i class="fas fa-check-circle text-primary" style="margin-right: var(--space-2);"></i>
+                <strong>Tailored Solutions:</strong> Custom proposals based on your needs
+              </li>
+              <li style="padding: var(--space-2) 0;">
+                <i class="fas fa-check-circle text-primary" style="margin-right: var(--space-2);"></i>
+                <strong>No Obligation:</strong> Explore options without commitment
+              </li>
+            </ul>
+          </div>
+          
+          <div class="card" style="margin-top: var(--space-4); background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); color: white; border: none;" data-testid="hours-card">
+            <h3 class="card-title" style="color: white;">Business Hours</h3>
+            <div style="margin-top: var(--space-3);">
+              <div style="display: flex; justify-content: space-between; padding: var(--space-1) 0;">
+                <span>Monday - Friday:</span>
+                <span style="font-weight: 600;">9:00 AM - 6:00 PM</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: var(--space-1) 0;">
+                <span>Saturday:</span>
+                <span style="font-weight: 600;">10:00 AM - 4:00 PM</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: var(--space-1) 0;">
+                <span>Sunday:</span>
+                <span style="font-weight: 600;">Closed</span>
+              </div>
+              <div style="margin-top: var(--space-2); padding-top: var(--space-2); border-top: 1px solid rgba(255,255,255,0.3);">
+                <p style="margin: 0; font-size: var(--text-sm); color: rgba(255,255,255,0.9);">
+                  <i class="fas fa-clock"></i> Emergency support available 24/7 for existing clients
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section bg-light" data-testid="map-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-description">
+          Visit our San Francisco headquarters or connect with us at one of our satellite offices.
+        </p>
+      </div>
+      
+      <div style="background-color: var(--color-bg-tertiary); border-radius: var(--border-radius-lg); padding: var(--space-8); text-align: center; border: 2px dashed var(--color-border);" data-testid="map-placeholder">
+        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--color-text-muted); margin-bottom: var(--space-2);"></i>
+        <h3 style="color: var(--color-text-secondary); font-size: var(--text-lg); margin-bottom: var(--space-2);">
+          Interactive Map
+        </h3>
+        <p style="color: var(--color-text-muted); max-width: 500px; margin: 0 auto;">
+          Embed your Google Maps location here by replacing this placeholder with an iframe containing your map coordinates.
+        </p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top: var(--space-3);">
+          <i class="fas fa-external-link-alt"></i> Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-testid="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4><i class="fas fa-rocket"></i> NexusTech</h4>
+          <p>
+            Empowering businesses through innovative technology solutions and strategic consulting services.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Cloud Solutions</a></li>
+            <li><a href="services.html">IT Consulting</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">Custom Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> info@nexustech.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 NexusTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top" data-testid="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

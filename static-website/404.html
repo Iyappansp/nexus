@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>404 - Page Not Found | NexusTech Solutions</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to NexusTech homepage.">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Error Section -->
+  <section class="section section-lg" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;" data-testid="error-section">
+    <div class="container">
+      <div class="text-center" style="max-width: 600px; margin: 0 auto;">
+        
+        <!-- 404 Illustration -->
+        <div style="font-size: 8rem; font-weight: 700; color: var(--color-primary); font-family: var(--font-heading); line-height: 1; margin-bottom: var(--space-3);" data-testid="error-code">
+          404
+        </div>
+        
+        <div style="font-size: 3rem; margin-bottom: var(--space-2);" data-testid="error-icon">
+          <i class="fas fa-exclamation-triangle" style="color: var(--color-warning);"></i>
+        </div>
+        
+        <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-3);" data-testid="error-title">
+          Page Not Found
+        </h1>
+        
+        <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--space-4);" data-testid="error-description">
+          Oops! The page you're looking for seems to have wandered off into the digital void. It might have been moved, deleted, or perhaps it never existed.
+        </p>
+        
+        <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap;">
+          <a href="index.html" class="btn btn-primary btn-lg" data-testid="btn-home">
+            <i class="fas fa-home"></i> Back to Home
+          </a>
+          <a href="pages/contact.html" class="btn btn-secondary btn-lg" data-testid="btn-contact">
+            <i class="fas fa-envelope"></i> Contact Support
+          </a>
+        </div>
+        
+        <!-- Helpful Links -->
+        <div class="card" style="margin-top: var(--space-6); text-align: left;" data-testid="helpful-links">
+          <h3 class="card-title">Popular Pages</h3>
+          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+            <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border);">
+              <a href="index.html" style="color: var(--color-text); display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-arrow-right text-primary"></i>
+                <span>Home - Main landing page</span>
+              </a>
+            </li>
+            <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border);">
+              <a href="pages/services.html" style="color: var(--color-text); display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-arrow-right text-primary"></i>
+                <span>Services - Our technology solutions</span>
+              </a>
+            </li>
+            <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border);">
+              <a href="pages/about.html" style="color: var(--color-text); display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-arrow-right text-primary"></i>
+                <span>About - Company information</span>
+              </a>
+            </li>
+            <li style="padding: var(--space-2) 0;">
+              <a href="pages/contact.html" style="color: var(--color-text); display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-arrow-right text-primary"></i>
+                <span>Contact - Get in touch</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

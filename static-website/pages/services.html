@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Our Services - Enterprise IT Solutions | NexusTech</title>
+  <meta name="description" content="Explore NexusTech's comprehensive IT services: Cloud Solutions, Consulting, Cybersecurity, Custom Development, AI & Analytics, and 24/7 Support.">
+  <meta name="keywords" content="IT services, cloud solutions, IT consulting, cybersecurity, custom software development, AI solutions">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" data-testid="main-navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-brand" data-testid="navbar-brand">
+        <i class="fas fa-rocket"></i> NexusTech
+      </a>
+      
+      <ul class="navbar-nav" data-testid="navbar-menu">
+        <li><a href="../index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="hero" data-testid="services-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-testid="services-title">Comprehensive Technology Solutions</h1>
+        <p class="hero-description" data-testid="services-description">
+          From strategic consulting to hands-on implementation, we provide end-to-end IT services that transform businesses and drive measurable results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section section-lg" data-testid="services-list">
+    <div class="container">
+      <div class="grid grid-2">
+        
+        <!-- Cloud Solutions -->
+        <div class="card" data-testid="service-cloud-detailed">
+          <div class="card-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="card-title">Cloud Solutions</h3>
+          <p class="card-text">
+            Modernize your infrastructure with enterprise cloud services that deliver scalability, reliability, and cost-efficiency.
+          </p>
+          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              AWS, Azure & Google Cloud Migration
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Cloud Architecture Design
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Infrastructure Optimization
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Multi-Cloud Management
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Cost Optimization & FinOps
+            </li>
+          </ul>
+        </div>
+
+        <!-- IT Consulting -->
+        <div class="card" data-testid="service-consulting-detailed">
+          <div class="card-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="card-title">IT Consulting</h3>
+          <p class="card-text">
+            Strategic technology guidance aligned with your business objectives to maximize ROI and drive competitive advantage.
+          </p>
+          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Digital Transformation Strategy
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Technology Roadmap Development
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Enterprise Architecture Planning
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              IT Budget Optimization
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Vendor Selection & Management
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="card" data-testid="service-security-detailed">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="card-title">Cybersecurity</h3>
+          <p class="card-text">
+            Comprehensive security solutions to protect your organization from cyber threats and ensure regulatory compliance.
+          </p>
+          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Security Assessment & Audits
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Penetration Testing
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Security Operations Center (SOC)
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Compliance Management (GDPR, HIPAA, SOC 2)
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Incident Response & Recovery
+            </li>
+          </ul>
+        </div>
+
+        <!-- Custom Development -->
+        <div class="card" data-testid="service-development-detailed">
+          <div class="card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="card-title">Custom Development</h3>
+          <p class="card-text">
+            Bespoke software solutions designed to address your unique business challenges with modern technologies and best practices.
+          </p>
+          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Web & Mobile Application Development
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Enterprise Software Solutions
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              API Development & Integration
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Legacy System Modernization
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              DevOps & CI/CD Implementation
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI & Analytics -->
+        <div class="card" data-testid="service-ai-detailed">
+          <div class="card-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="card-title">AI & Analytics</h3>
+          <p class="card-text">
+            Leverage artificial intelligence and advanced analytics to unlock insights, automate processes, and make data-driven decisions.
+          </p>
+          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Machine Learning Model Development
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Predictive Analytics
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Natural Language Processing
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Business Intelligence Dashboards
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Computer Vision Solutions
+            </li>
+          </ul>
+        </div>
+
+        <!-- 24/7 Support -->
+        <div class="card" data-testid="service-support-detailed">
+          <div class="card-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="card-title">24/7 Support & Maintenance</h3>
+          <p class="card-text">
+            Proactive monitoring and round-the-clock support to ensure your systems operate at peak performance without interruption.
+          </p>
+          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              24/7 Help Desk Support
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Proactive System Monitoring
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Performance Optimization
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Patch Management & Updates
+            </li>
+            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
+              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
+              Disaster Recovery Planning
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Process -->
+  <section class="section bg-light" data-testid="process-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">How We Work</span>
+        <h2 class="section-title">Our Proven Delivery Process</h2>
+        <p class="section-description">
+          A structured approach that ensures successful outcomes for every project, from discovery to deployment and beyond.
+        </p>
+      </div>
+      
+      <div class="grid grid-4">
+        <div class="card text-center" data-testid="process-discovery">
+          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
+            1
+          </div>
+          <h3 class="card-title">Discovery</h3>
+          <p class="card-text">
+            Understand your business, challenges, goals, and current technology landscape.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="process-strategy">
+          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
+            2
+          </div>
+          <h3 class="card-title">Strategy</h3>
+          <p class="card-text">
+            Develop a comprehensive roadmap with clear milestones and success metrics.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="process-implementation">
+          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
+            3
+          </div>
+          <h3 class="card-title">Implementation</h3>
+          <p class="card-text">
+            Execute with agile methodology, transparent communication, and quality focus.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="process-optimization">
+          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
+            4
+          </div>
+          <h3 class="card-title">Optimization</h3>
+          <p class="card-text">
+            Continuous improvement, monitoring, and support to maximize value.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section class="section section-lg" data-testid="industries-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Industry Expertise</span>
+        <h2 class="section-title">Sectors We Serve</h2>
+        <p class="section-description">
+          Deep domain knowledge across multiple industries enables us to deliver solutions that address sector-specific challenges.
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card" data-testid="industry-finance">
+          <h3 class="card-title">
+            <i class="fas fa-university text-primary"></i> Financial Services
+          </h3>
+          <p class="card-text">
+            Banking, fintech, insurance – secure, compliant solutions for regulated environments.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="industry-healthcare">
+          <h3 class="card-title">
+            <i class="fas fa-heartbeat text-primary"></i> Healthcare
+          </h3>
+          <p class="card-text">
+            HIPAA-compliant systems, telemedicine platforms, and healthcare analytics.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="industry-retail">
+          <h3 class="card-title">
+            <i class="fas fa-shopping-cart text-primary"></i> Retail & E-commerce
+          </h3>
+          <p class="card-text">
+            Omnichannel solutions, inventory management, and customer experience platforms.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="industry-manufacturing">
+          <h3 class="card-title">
+            <i class="fas fa-industry text-primary"></i> Manufacturing
+          </h3>
+          <p class="card-text">
+            IoT integration, supply chain optimization, and predictive maintenance.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="industry-education">
+          <h3 class="card-title">
+            <i class="fas fa-graduation-cap text-primary"></i> Education
+          </h3>
+          <p class="card-text">
+            Learning management systems, virtual classrooms, and student analytics.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="industry-technology">
+          <h3 class="card-title">
+            <i class="fas fa-microchip text-primary"></i> Technology
+          </h3>
+          <p class="card-text">
+            Scalable SaaS infrastructure, developer tools, and platform engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" data-testid="cta-section">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Let's Build Something Amazing Together</h2>
+        <p>
+          Ready to transform your technology landscape? Our experts are standing by to discuss your project requirements and provide tailored recommendations.
+        </p>
+        <a href="contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
+          Schedule a Consultation <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-testid="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4><i class="fas fa-rocket"></i> NexusTech</h4>
+          <p>
+            Empowering businesses through innovative technology solutions and strategic consulting services.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Cloud Solutions</a></li>
+            <li><a href="services.html">IT Consulting</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">Custom Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> info@nexustech.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 NexusTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top" data-testid="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>About NexusTech - Our Story, Mission & Expert Team</title>
+  <meta name="description" content="Learn about NexusTech Solutions, our mission to drive digital transformation, and meet the expert team behind our innovative IT services.">
+  <meta name="keywords" content="about NexusTech, IT consulting company, technology experts, our mission, our team">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" data-testid="main-navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-brand" data-testid="navbar-brand">
+        <i class="fas fa-rocket"></i> NexusTech
+      </a>
+      
+      <ul class="navbar-nav" data-testid="navbar-menu">
+        <li><a href="../index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="hero" data-testid="about-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-testid="about-title">Driving Innovation Through Technology Excellence</h1>
+        <p class="hero-description" data-testid="about-description">
+          For over a decade, NexusTech has been at the forefront of digital transformation, helping businesses harness technology to achieve extraordinary results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Story -->
+  <section class="section section-lg" data-testid="story-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Journey</span>
+        <h2 class="section-title">The NexusTech Story</h2>
+      </div>
+      
+      <div class="grid grid-2" style="align-items: center;">
+        <div data-testid="story-content">
+          <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--space-3);">
+            Founded in 2013 by a team of passionate technologists and business strategists, NexusTech emerged from a simple yet powerful vision: to bridge the gap between cutting-edge technology and business objectives.
+          </p>
+          <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--space-3);">
+            What started as a small consulting firm has grown into a full-service technology partner, serving Fortune 500 companies and innovative startups alike. Our growth has been fueled by one principle: relentless focus on client success.
+          </p>
+          <p style="font-size: var(--text-lg); color: var(--color-text-secondary);">
+            Today, we're proud to have helped over 500 organizations navigate digital transformation, implement cloud solutions, enhance cybersecurity, and build custom software that powers their operations.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="story-stats">
+          <h3 class="card-title">By the Numbers</h3>
+          <div style="display: grid; gap: var(--space-3); margin-top: var(--space-3);">
+            <div>
+              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2013</div>
+              <div style="color: var(--color-text-secondary);">Year Founded</div>
+            </div>
+            <div>
+              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">500+</div>
+              <div style="color: var(--color-text-secondary);">Clients Served</div>
+            </div>
+            <div>
+              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">50+</div>
+              <div style="color: var(--color-text-secondary);">Team Members</div>
+            </div>
+            <div>
+              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">15+</div>
+              <div style="color: var(--color-text-secondary);">Countries Reached</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="section bg-light" data-testid="mission-section">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="card" data-testid="mission-card">
+          <div class="card-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 class="card-title">Our Mission</h3>
+          <p class="card-text" style="font-size: var(--text-lg);">
+            To empower organizations of all sizes with innovative technology solutions that drive measurable business outcomes, enhance operational efficiency, and create competitive advantages in an increasingly digital world.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="vision-card">
+          <div class="card-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3 class="card-title">Our Vision</h3>
+          <p class="card-text" style="font-size: var(--text-lg);">
+            To be the most trusted technology partner for businesses worldwide, recognized for our expertise, innovation, and unwavering commitment to client success in every engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section section-lg" data-testid="values-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">What Drives Us</span>
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="section-description">
+          The principles that guide every decision, project, and client interaction at NexusTech.
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card" data-testid="value-excellence">
+          <div class="card-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="card-title">Excellence</h3>
+          <p class="card-text">
+            We pursue the highest standards in everything we do, from code quality to client communication.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="value-innovation">
+          <div class="card-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="card-title">Innovation</h3>
+          <p class="card-text">
+            We embrace emerging technologies and creative problem-solving to deliver forward-thinking solutions.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="value-integrity">
+          <div class="card-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3 class="card-title">Integrity</h3>
+          <p class="card-text">
+            Transparency, honesty, and ethical practices form the foundation of our client relationships.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="value-collaboration">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="card-title">Collaboration</h3>
+          <p class="card-text">
+            We work as true partners, combining our expertise with your business knowledge for optimal results.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="value-agility">
+          <div class="card-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3 class="card-title">Agility</h3>
+          <p class="card-text">
+            We adapt quickly to changing requirements and market conditions, ensuring project success.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="value-impact">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="card-title">Impact</h3>
+          <p class="card-text">
+            We measure success by the tangible business value and positive outcomes we create for clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Team -->
+  <section class="section bg-light" data-testid="team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Meet the Team</span>
+        <h2 class="section-title">Leadership Excellence</h2>
+        <p class="section-description">
+          Seasoned professionals with diverse expertise united by a passion for technology and client success.
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card text-center" data-testid="team-member-1">
+          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
+            JD
+          </div>
+          <h3 class="card-title">James Davidson</h3>
+          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
+            CEO & Founder
+          </p>
+          <p class="card-text">
+            20+ years in enterprise technology. Previously led digital transformation at Fortune 100 companies. MIT Computer Science graduate.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="team-member-2">
+          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
+            AR
+          </div>
+          <h3 class="card-title">Aisha Rahman</h3>
+          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
+            CTO
+          </p>
+          <p class="card-text">
+            Expert in cloud architecture and cybersecurity. Former principal engineer at major tech firms. Stanford Engineering alumna.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="team-member-3">
+          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
+            MW
+          </div>
+          <h3 class="card-title">Marcus Williams</h3>
+          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
+            VP of Consulting
+          </p>
+          <p class="card-text">
+            15 years of IT strategy consulting. Specialized in digital transformation roadmaps. MBA from Harvard Business School.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="team-member-4">
+          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
+            LZ
+          </div>
+          <h3 class="card-title">Lisa Zhang</h3>
+          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
+            Head of AI Solutions
+          </p>
+          <p class="card-text">
+            AI/ML pioneer with 12 years in data science. Published researcher. PhD in Artificial Intelligence from Carnegie Mellon.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="team-member-5">
+          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
+            RP
+          </div>
+          <h3 class="card-title">Raj Patel</h3>
+          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
+            Director of Development
+          </p>
+          <p class="card-text">
+            Full-stack architect with expertise in scalable systems. Led development teams at unicorn startups. Berkeley CS graduate.
+          </p>
+        </div>
+        
+        <div class="card text-center" data-testid="team-member-6">
+          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
+            EK
+          </div>
+          <h3 class="card-title">Emma Kowalski</h3>
+          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
+            Chief Security Officer
+          </p>
+          <p class="card-text">
+            Cybersecurity expert with government and private sector experience. Certified ethical hacker. Multiple security certifications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Timeline -->
+  <section class="section section-lg" data-testid="timeline-section">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-badge">Our Journey</span>
+        <h2 class="section-title">Milestones & Achievements</h2>
+      </div>
+      
+      <div style="display: grid; gap: var(--space-4);">
+        <div class="card" data-testid="milestone-1">
+          <div style="display: flex; gap: var(--space-3); align-items: start;">
+            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2013</div>
+            <div>
+              <h3 class="card-title">The Beginning</h3>
+              <p class="card-text">
+                NexusTech founded by three technology veterans with a vision to revolutionize IT consulting.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-testid="milestone-2">
+          <div style="display: flex; gap: var(--space-3); align-items: start;">
+            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2015</div>
+            <div>
+              <h3 class="card-title">Major Expansion</h3>
+              <p class="card-text">
+                Opened offices in New York and London. Team grew to 25+ consultants. First Fortune 500 client.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-testid="milestone-3">
+          <div style="display: flex; gap: var(--space-3); align-items: start;">
+            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2018</div>
+            <div>
+              <h3 class="card-title">Cloud Excellence</h3>
+              <p class="card-text">
+                Achieved AWS Advanced Consulting Partner status. Launched dedicated cloud migration practice.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-testid="milestone-4">
+          <div style="display: flex; gap: var(--space-3); align-items: start;">
+            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2020</div>
+            <div>
+              <h3 class="card-title">AI Innovation Lab</h3>
+              <p class="card-text">
+                Established AI & Machine Learning center of excellence. Helped 100+ clients implement AI solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-testid="milestone-5">
+          <div style="display: flex; gap: var(--space-3); align-items: start;">
+            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2024</div>
+            <div>
+              <h3 class="card-title">Global Recognition</h3>
+              <p class="card-text">
+                Named "Top 50 IT Consulting Firms" by industry publications. Serving clients across 15+ countries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" data-testid="cta-section">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Join Us on the Journey</h2>
+        <p>
+          Whether you're looking to transform your technology infrastructure or explore career opportunities with a dynamic team, we'd love to hear from you.
+        </p>
+        <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-testid="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4><i class="fas fa-rocket"></i> NexusTech</h4>
+          <p>
+            Empowering businesses through innovative technology solutions and strategic consulting services.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Cloud Solutions</a></li>
+            <li><a href="services.html">IT Consulting</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">Custom Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> info@nexustech.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 NexusTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top" data-testid="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

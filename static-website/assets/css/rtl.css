@@ -1,0 +1,82 @@
+/* ============================================
+   RTL (Right-to-Left) Support
+   For Arabic, Hebrew, and other RTL languages
+   ============================================ */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Navbar RTL */
+[dir="rtl"] .navbar-container {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .navbar-nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .navbar-nav a::after {
+  left: auto;
+  right: 0;
+}
+
+/* Button RTL */
+[dir="rtl"] .btn {
+  flex-direction: row-reverse;
+}
+
+/* Hero RTL */
+[dir="rtl"] .hero-cta {
+  flex-direction: row-reverse;
+}
+
+/* Card RTL */
+[dir="rtl"] .card-icon {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Testimonial RTL */
+[dir="rtl"] .testimonial-author {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* Footer RTL */
+[dir="rtl"] .footer-links {
+  text-align: right;
+}
+
+[dir="rtl"] .social-links {
+  flex-direction: row-reverse;
+}
+
+/* Form RTL */
+[dir="rtl"] .form-label {
+  text-align: right;
+}
+
+/* Grid RTL */
+[dir="rtl"] .grid {
+  direction: rtl;
+}
+
+/* Scroll to Top RTL */
+[dir="rtl"] .scroll-top {
+  right: auto;
+  left: 2rem;
+}
+
+/* Mobile Navigation RTL */
+@media (max-width: 768px) {
+  [dir="rtl"] .navbar-nav {
+    align-items: flex-start;
+  }
+  
+  [dir="rtl"] .navbar-toggle {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

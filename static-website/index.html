@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>NexusTech Solutions - Premier IT Consulting & Digital Transformation Services</title>
+  <meta name="description" content="Transform your business with NexusTech's enterprise IT solutions. Expert consulting, cloud services, and digital innovation for forward-thinking companies.">
+  <meta name="keywords" content="IT consulting, digital transformation, cloud services, enterprise solutions, technology consulting">
+  <meta name="author" content="NexusTech Solutions">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="NexusTech Solutions - Premier IT Consulting Services">
+  <meta property="og:description" content="Transform your business with enterprise IT solutions and digital innovation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nexustech.example.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" data-testid="main-navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand" data-testid="navbar-brand">
+        <i class="fas fa-rocket"></i> NexusTech
+      </a>
+      
+      <ul class="navbar-nav" data-testid="navbar-menu">
+        <li><a href="index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="pages/about.html" data-testid="nav-about">About</a></li>
+        <li><a href="pages/services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="pages/contact.html" data-testid="nav-contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" data-testid="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-testid="hero-title">Transform Your Business with Cutting-Edge Technology</h1>
+        <p class="hero-description" data-testid="hero-description">
+          We deliver enterprise-grade IT solutions that drive innovation, efficiency, and growth. Partner with industry experts who understand your challenges.
+        </p>
+        <div class="hero-cta">
+          <a href="pages/contact.html" class="btn btn-primary btn-lg" data-testid="cta-get-started">
+            Get Started <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="pages/services.html" class="btn btn-secondary btn-lg" data-testid="cta-learn-more">
+            Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section bg-light" data-testid="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-testid="stat-clients">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item" data-testid="stat-projects">
+          <div class="stat-number">1,200+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item" data-testid="stat-experts">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Expert Consultants</div>
+        </div>
+        <div class="stat-item" data-testid="stat-satisfaction">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section section-lg" data-testid="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-testid="services-badge">What We Offer</span>
+        <h2 class="section-title" data-testid="services-title">Comprehensive IT Solutions</h2>
+        <p class="section-description" data-testid="services-description">
+          From strategy to implementation, we provide end-to-end technology services tailored to your business needs.
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card" data-testid="service-cloud">
+          <div class="card-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="card-title">Cloud Solutions</h3>
+          <p class="card-text">
+            Seamless migration, management, and optimization of cloud infrastructure with AWS, Azure, and Google Cloud expertise.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="service-consulting">
+          <div class="card-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="card-title">IT Consulting</h3>
+          <p class="card-text">
+            Strategic technology guidance to align your IT investments with business objectives and drive measurable ROI.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="service-security">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="card-title">Cybersecurity</h3>
+          <p class="card-text">
+            Comprehensive security solutions to protect your digital assets from evolving threats and ensure compliance.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="service-development">
+          <div class="card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="card-title">Custom Development</h3>
+          <p class="card-text">
+            Bespoke software solutions built with modern technologies to solve unique business challenges efficiently.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="service-ai">
+          <div class="card-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="card-title">AI & Analytics</h3>
+          <p class="card-text">
+            Harness the power of artificial intelligence and data analytics to gain actionable insights and competitive advantage.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="service-support">
+          <div class="card-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="card-title">24/7 Support</h3>
+          <p class="card-text">
+            Round-the-clock technical support and maintenance to ensure your systems run smoothly without interruption.
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <a href="pages/services.html" class="btn btn-primary" data-testid="view-all-services">
+          View All Services <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section bg-light" data-testid="why-choose-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Advantage</span>
+        <h2 class="section-title">Why Leading Companies Choose NexusTech</h2>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="card" data-testid="advantage-expertise">
+          <h3 class="card-title">
+            <i class="fas fa-award text-primary"></i> Deep Industry Expertise
+          </h3>
+          <p class="card-text">
+            Our team brings decades of combined experience across finance, healthcare, retail, and manufacturing sectors.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="advantage-innovation">
+          <h3 class="card-title">
+            <i class="fas fa-rocket text-primary"></i> Innovation-First Approach
+          </h3>
+          <p class="card-text">
+            We stay ahead of technology trends, ensuring you benefit from the latest tools and methodologies.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="advantage-results">
+          <h3 class="card-title">
+            <i class="fas fa-chart-line text-primary"></i> Proven Results
+          </h3>
+          <p class="card-text">
+            Track record of delivering measurable business outcomes: 40% average efficiency gains, 60% cost reductions.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="advantage-partnership">
+          <h3 class="card-title">
+            <i class="fas fa-handshake text-primary"></i> True Partnership
+          </h3>
+          <p class="card-text">
+            We don't just deliver projects – we become your trusted technology partner for long-term success.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-lg" data-testid="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Client Stories</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-description">
+          Don't just take our word for it – hear from businesses we've helped transform.
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="testimonial" data-testid="testimonial-1">
+          <p class="testimonial-text">
+            "NexusTech transformed our legacy infrastructure into a modern, scalable cloud solution. The results exceeded our expectations."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SJ</div>
+            <div class="testimonial-info">
+              <h5>Sarah Johnson</h5>
+              <p>CTO, TechVentures Inc</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial" data-testid="testimonial-2">
+          <p class="testimonial-text">
+            "Their cybersecurity expertise helped us achieve compliance and gave us peace of mind. Highly professional team."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MC</div>
+            <div class="testimonial-info">
+              <h5>Michael Chen</h5>
+              <p>CEO, SecureFinance Ltd</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial" data-testid="testimonial-3">
+          <p class="testimonial-text">
+            "The custom software solution they built streamlined our operations and saved us 30% in operational costs annually."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">EP</div>
+            <div class="testimonial-info">
+              <h5>Emily Parker</h5>
+              <p>Operations Director, RetailPro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" data-testid="cta-section">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>
+          Let's discuss how our technology solutions can drive your success. Schedule a free consultation with our experts today.
+        </p>
+        <a href="pages/contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
+          Get In Touch <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-testid="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section" data-testid="footer-about">
+          <h4><i class="fas fa-rocket"></i> NexusTech</h4>
+          <p>
+            Empowering businesses through innovative technology solutions and strategic consulting services.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn" data-testid="social-linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter" data-testid="social-twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub" data-testid="social-github">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook" data-testid="social-facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section" data-testid="footer-quick-links">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section" data-testid="footer-services">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="pages/services.html">Cloud Solutions</a></li>
+            <li><a href="pages/services.html">IT Consulting</a></li>
+            <li><a href="pages/services.html">Cybersecurity</a></li>
+            <li><a href="pages/services.html">Custom Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section" data-testid="footer-contact">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> info@nexustech.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 NexusTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top" data-testid="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
