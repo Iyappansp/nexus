@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- SEO Meta Tags -->
-  <title>Our Services - Enterprise IT Solutions | NexusTech</title>
-  <meta name="description" content="Explore NexusTech's comprehensive IT services: Cloud Solutions, Consulting, Cybersecurity, Custom Development, AI & Analytics, and 24/7 Support.">
-  <meta name="keywords" content="IT services, cloud solutions, IT consulting, cybersecurity, custom software development, AI solutions">
+  <title>Marina Services & Amenities - Everything You Need at the Dock</title>
+  <meta name="description" content="Discover our comprehensive marina services and amenities including boat slip rentals, fuel dock, pump-out station, restrooms, showers, and professional support.">
+  <meta name="keywords" content="marina services, boat slip amenities, marina facilities, fuel dock, pump-out station, marina support">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +32,15 @@
   <nav class="navbar" data-testid="main-navbar">
     <div class="navbar-container">
       <a href="../index.html" class="navbar-brand" data-testid="navbar-brand">
-        <i class="fas fa-rocket"></i> NexusTech
+        <i class="fas fa-anchor"></i> Harbor Marina
       </a>
       
       <ul class="navbar-nav" data-testid="navbar-menu">
         <li><a href="../index.html" data-testid="nav-home">Home</a></li>
         <li><a href="about.html" data-testid="nav-about">About</a></li>
         <li><a href="services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="tariff.html" data-testid="nav-tariff">Tariff</a></li>
+        <li><a href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
         <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
         <li>
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
@@ -57,342 +59,273 @@
   </nav>
 
   <!-- Page Hero -->
-  <section class="hero" data-testid="services-hero">
+  <section class="hero" data-testid="services-hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/Floating Docks.webp'); background-size: cover; background-position: center; min-height: 50vh; display: flex; align-items: center; color: white;">
     <div class="container">
       <div class="hero-content">
-        <h1 data-testid="services-title">Comprehensive Technology Solutions</h1>
-        <p class="hero-description" data-testid="services-description">
-          From strategic consulting to hands-on implementation, we provide end-to-end IT services that transform businesses and drive measurable results.
+        <nav class="breadcrumb">
+          <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Services</span>
+        </nav>
+        <h1 data-testid="services-title" style="color: white;">Marina Services & Amenities</h1>
+        <p class="hero-description" data-testid="services-description" style="color: rgba(255,255,255,0.9);">
+          Everything you need, right at the dock. Comprehensive facilities and professional support for all your boating needs.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Services Grid -->
-  <section class="section section-lg" data-testid="services-list">
-    <div class="container">
-      <div class="grid grid-2">
-        
-        <!-- Cloud Solutions -->
-        <div class="card" data-testid="service-cloud-detailed">
-          <div class="card-icon">
-            <i class="fas fa-cloud"></i>
-          </div>
-          <h3 class="card-title">Cloud Solutions</h3>
-          <p class="card-text">
-            Modernize your infrastructure with enterprise cloud services that deliver scalability, reliability, and cost-efficiency.
-          </p>
-          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              AWS, Azure & Google Cloud Migration
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Cloud Architecture Design
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Infrastructure Optimization
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Multi-Cloud Management
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Cost Optimization & FinOps
-            </li>
-          </ul>
-        </div>
-
-        <!-- IT Consulting -->
-        <div class="card" data-testid="service-consulting-detailed">
-          <div class="card-icon">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <h3 class="card-title">IT Consulting</h3>
-          <p class="card-text">
-            Strategic technology guidance aligned with your business objectives to maximize ROI and drive competitive advantage.
-          </p>
-          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Digital Transformation Strategy
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Technology Roadmap Development
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Enterprise Architecture Planning
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              IT Budget Optimization
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Vendor Selection & Management
-            </li>
-          </ul>
-        </div>
-
-        <!-- Cybersecurity -->
-        <div class="card" data-testid="service-security-detailed">
-          <div class="card-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3 class="card-title">Cybersecurity</h3>
-          <p class="card-text">
-            Comprehensive security solutions to protect your organization from cyber threats and ensure regulatory compliance.
-          </p>
-          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Security Assessment & Audits
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Penetration Testing
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Security Operations Center (SOC)
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Compliance Management (GDPR, HIPAA, SOC 2)
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Incident Response & Recovery
-            </li>
-          </ul>
-        </div>
-
-        <!-- Custom Development -->
-        <div class="card" data-testid="service-development-detailed">
-          <div class="card-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3 class="card-title">Custom Development</h3>
-          <p class="card-text">
-            Bespoke software solutions designed to address your unique business challenges with modern technologies and best practices.
-          </p>
-          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Web & Mobile Application Development
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Enterprise Software Solutions
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              API Development & Integration
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Legacy System Modernization
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              DevOps & CI/CD Implementation
-            </li>
-          </ul>
-        </div>
-
-        <!-- AI & Analytics -->
-        <div class="card" data-testid="service-ai-detailed">
-          <div class="card-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3 class="card-title">AI & Analytics</h3>
-          <p class="card-text">
-            Leverage artificial intelligence and advanced analytics to unlock insights, automate processes, and make data-driven decisions.
-          </p>
-          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Machine Learning Model Development
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Predictive Analytics
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Natural Language Processing
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Business Intelligence Dashboards
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Computer Vision Solutions
-            </li>
-          </ul>
-        </div>
-
-        <!-- 24/7 Support -->
-        <div class="card" data-testid="service-support-detailed">
-          <div class="card-icon">
-            <i class="fas fa-headset"></i>
-          </div>
-          <h3 class="card-title">24/7 Support & Maintenance</h3>
-          <p class="card-text">
-            Proactive monitoring and round-the-clock support to ensure your systems operate at peak performance without interruption.
-          </p>
-          <ul style="list-style: none; padding: 0; margin-top: var(--space-3);">
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              24/7 Help Desk Support
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Proactive System Monitoring
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Performance Optimization
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Patch Management & Updates
-            </li>
-            <li style="padding: var(--space-1) 0; color: var(--color-text-secondary);">
-              <i class="fas fa-check text-primary" style="margin-right: var(--space-2);"></i>
-              Disaster Recovery Planning
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Service Process -->
-  <section class="section bg-light" data-testid="process-section">
+  <!-- Amenities & Services Overview -->
+  <section class="section section-lg" data-testid="amenities-overview">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">How We Work</span>
-        <h2 class="section-title">Our Proven Delivery Process</h2>
+        <span class="section-badge">Complete Facilities</span>
+        <h2 class="section-title">Amenities & Services</h2>
         <p class="section-description">
-          A structured approach that ensures successful outcomes for every project, from discovery to deployment and beyond.
+          Everything you need, right at the dock.
         </p>
       </div>
       
-      <div class="grid grid-4">
-        <div class="card text-center" data-testid="process-discovery">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
-            1
+      <div class="grid grid-2">
+        <!-- Amenities Column -->
+        <div class="card" data-testid="amenities-list">
+          <h3 class="card-title">
+            <i class="fas fa-star text-primary"></i> Amenities
+          </h3>
+          <div style="display: grid; gap: var(--space-2); margin-top: var(--space-3);">
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Clean restrooms and showers</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Fuel dock access</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Pump-out station</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Parking facilities</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Basic wifi coverage</span>
+            </div>
           </div>
-          <h3 class="card-title">Discovery</h3>
+        </div>
+        
+        <!-- Services Column -->
+        <div class="card" data-testid="services-list">
+          <h3 class="card-title">
+            <i class="fas fa-tools text-primary"></i> Services
+          </h3>
+          <div style="display: grid; gap: var(--space-2); margin-top: var(--space-3);">
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Routine maintenance assistance</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Emergency dock support</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Waste disposal facilities</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <i class="fas fa-check-circle" style="color: var(--color-primary);"></i>
+              <span>Marina staff assistance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Amenities -->
+  <section class="section bg-light" data-testid="detailed-amenities">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Facility Details</h2>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card" data-testid="amenity-restrooms">
+          <div class="card-icon">
+            <i class="fas fa-restroom"></i>
+          </div>
+          <h3 class="card-title">Clean Restrooms & Showers</h3>
           <p class="card-text">
-            Understand your business, challenges, goals, and current technology landscape.
+            Modern, well-maintained restroom and shower facilities available 24/7 for marina guests and slip holders.
           </p>
         </div>
         
-        <div class="card text-center" data-testid="process-strategy">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
-            2
+        <div class="card" data-testid="amenity-fuel">
+          <div class="card-icon">
+            <i class="fas fa-gas-pump"></i>
           </div>
-          <h3 class="card-title">Strategy</h3>
+          <h3 class="card-title">Fuel Dock Access</h3>
           <p class="card-text">
-            Develop a comprehensive roadmap with clear milestones and success metrics.
+            Convenient on-site fuel dock with competitive pricing for both gasoline and diesel fuel.
           </p>
         </div>
         
-        <div class="card text-center" data-testid="process-implementation">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
-            3
+        <div class="card" data-testid="amenity-pumpout">
+          <div class="card-icon">
+            <i class="fas fa-recycle"></i>
           </div>
-          <h3 class="card-title">Implementation</h3>
+          <h3 class="card-title">Pump-Out Station</h3>
           <p class="card-text">
-            Execute with agile methodology, transparent communication, and quality focus.
+            Professional pump-out services to ensure proper waste management and environmental compliance.
           </p>
         </div>
         
-        <div class="card text-center" data-testid="process-optimization">
-          <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); border-radius: 50%; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700;">
-            4
+        <div class="card" data-testid="amenity-parking">
+          <div class="card-icon">
+            <i class="fas fa-parking"></i>
           </div>
-          <h3 class="card-title">Optimization</h3>
+          <h3 class="card-title">Parking Facilities</h3>
           <p class="card-text">
-            Continuous improvement, monitoring, and support to maximize value.
+            Ample secure parking for slip holders and guests, with designated spaces close to dock access.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="amenity-wifi">
+          <div class="card-icon">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <h3 class="card-title">Basic WiFi Coverage</h3>
+          <p class="card-text">
+            Complimentary wireless internet access throughout common areas and dock facilities.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="amenity-security">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="card-title">24/7 Security</h3>
+          <p class="card-text">
+            Round-the-clock surveillance and controlled access for the safety of your vessel and peace of mind.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Industries -->
-  <section class="section section-lg" data-testid="industries-section">
+  <!-- Boat Slip Rentals -->
+  <section class="section section-lg" data-testid="slip-rentals">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Industry Expertise</span>
-        <h2 class="section-title">Sectors We Serve</h2>
+        <span class="section-badge">Flexible Options</span>
+        <h2 class="section-title">Boat Slip Rentals</h2>
         <p class="section-description">
-          Deep domain knowledge across multiple industries enables us to deliver solutions that address sector-specific challenges.
+          We offer flexible boat slip rental options to suit different needs and vessel sizes. Our slips accommodate fishing boats, sailboats, speedboats, and yachts.
         </p>
       </div>
       
       <div class="grid grid-3">
-        <div class="card" data-testid="industry-finance">
+        <div class="card" data-testid="slip-type-small">
+          <div class="card-icon">
+            <i class="fas fa-ship"></i>
+          </div>
+          <h3 class="card-title">Small Vessels</h3>
+          <p class="card-text">
+            Slips for boats up to 25 feet, perfect for fishing boats, small sailboats, and personal watercraft.
+          </p>
+          <ul style="margin-top: var(--space-2); color: var(--color-text-secondary);">
+            <li>20-25 ft slips available</li>
+            <li>Power and water hookups</li>
+            <li>Easy dock access</li>
+          </ul>
+        </div>
+        
+        <div class="card" data-testid="slip-type-medium">
+          <div class="card-icon">
+            <i class="fas fa-sailboat"></i>
+          </div>
+          <h3 class="card-title">Medium Vessels</h3>
+          <p class="card-text">
+            Accommodations for boats 26-40 feet, ideal for cruisers, sailboats, and larger fishing vessels.
+          </p>
+          <ul style="margin-top: var(--space-2); color: var(--color-text-secondary);">
+            <li>26-40 ft slips available</li>
+            <li>30/50 amp electrical service</li>
+            <li>Floating dock options</li>
+          </ul>
+        </div>
+        
+        <div class="card" data-testid="slip-type-large">
+          <div class="card-icon">
+            <i class="fas fa-anchor"></i>
+          </div>
+          <h3 class="card-title">Large Vessels & Yachts</h3>
+          <p class="card-text">
+            Premium slips for vessels over 40 feet, including yachts and large cruisers with full amenities.
+          </p>
+          <ul style="margin-top: var(--space-2); color: var(--color-text-secondary);">
+            <li>40+ ft slips available</li>
+            <li>100 amp service available</li>
+            <li>Premium dock locations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slip Facilities -->
+  <section class="section bg-light" data-testid="slip-facilities">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Slip Facilities</h2>
+        <p class="section-description">
+          Every slip comes equipped with essential utilities and features for your convenience.
+        </p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="card" data-testid="facility-sizes">
           <h3 class="card-title">
-            <i class="fas fa-university text-primary"></i> Financial Services
+            <i class="fas fa-ruler-combined text-primary"></i> Multiple Slip Sizes Available
           </h3>
           <p class="card-text">
-            Banking, fintech, insurance – secure, compliant solutions for regulated environments.
+            Various slip sizes to accommodate vessels from small fishing boats to large yachts, ensuring the perfect fit for your boat.
           </p>
         </div>
         
-        <div class="card" data-testid="industry-healthcare">
+        <div class="card" data-testid="facility-water">
           <h3 class="card-title">
-            <i class="fas fa-heartbeat text-primary"></i> Healthcare
+            <i class="fas fa-tint text-primary"></i> Fresh Water Connections
           </h3>
           <p class="card-text">
-            HIPAA-compliant systems, telemedicine platforms, and healthcare analytics.
+            Convenient fresh water hookups at every slip for easy access to clean water whenever you need it.
           </p>
         </div>
         
-        <div class="card" data-testid="industry-retail">
+        <div class="card" data-testid="facility-power">
           <h3 class="card-title">
-            <i class="fas fa-shopping-cart text-primary"></i> Retail & E-commerce
+            <i class="fas fa-plug text-primary"></i> Electrical Power Supply
           </h3>
           <p class="card-text">
-            Omnichannel solutions, inventory management, and customer experience platforms.
+            Reliable electrical connections with various amperage options (30/50/100 amp) to keep your vessel powered.
           </p>
         </div>
         
-        <div class="card" data-testid="industry-manufacturing">
+        <div class="card" data-testid="facility-mooring">
           <h3 class="card-title">
-            <i class="fas fa-industry text-primary"></i> Manufacturing
+            <i class="fas fa-anchor text-primary"></i> Secure Mooring Points
           </h3>
           <p class="card-text">
-            IoT integration, supply chain optimization, and predictive maintenance.
+            Professional-grade cleats and mooring equipment designed for safe and secure docking in all conditions.
           </p>
         </div>
         
-        <div class="card" data-testid="industry-education">
+        <div class="card" data-testid="facility-lighting">
           <h3 class="card-title">
-            <i class="fas fa-graduation-cap text-primary"></i> Education
+            <i class="fas fa-lightbulb text-primary"></i> Well-Lit Docks for Night Access
           </h3>
           <p class="card-text">
-            Learning management systems, virtual classrooms, and student analytics.
-          </p>
-        </div>
-        
-        <div class="card" data-testid="industry-technology">
-          <h3 class="card-title">
-            <i class="fas fa-microchip text-primary"></i> Technology
-          </h3>
-          <p class="card-text">
-            Scalable SaaS infrastructure, developer tools, and platform engineering.
+            LED lighting throughout the marina ensures safe navigation and access to your vessel at any hour.
           </p>
         </div>
       </div>
@@ -403,13 +336,18 @@
   <section class="section" data-testid="cta-section">
     <div class="container">
       <div class="cta-section">
-        <h2>Let's Build Something Amazing Together</h2>
+        <h2>Ready to Reserve Your Slip?</h2>
         <p>
-          Ready to transform your technology landscape? Our experts are standing by to discuss your project requirements and provide tailored recommendations.
+          Contact our marina team today to discuss availability, pricing, and find the perfect slip for your vessel.
         </p>
-        <a href="contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
-          Schedule a Consultation <i class="fas fa-arrow-right"></i>
-        </a>
+        <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap;">
+          <a href="tariff.html" class="btn btn-primary btn-lg" data-testid="cta-pricing">
+            View Pricing
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
+            Contact Us
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -419,14 +357,14 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h4><i class="fas fa-rocket"></i> NexusTech</h4>
+          <h4><i class="fas fa-anchor"></i> Harbor Marina</h4>
           <p>
-            Empowering businesses through innovative technology solutions and strategic consulting services.
+            Providing secure, well-maintained boat slip rentals with professional support and modern facilities for all vessel types.
           </p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
@@ -435,34 +373,36 @@
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">About Marina</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="tariff.html">Tariff</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
-          <h4>Services</h4>
+          <h4>Our Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html">Cloud Solutions</a></li>
-            <li><a href="services.html">IT Consulting</a></li>
-            <li><a href="services.html">Cybersecurity</a></li>
-            <li><a href="services.html">Custom Development</a></li>
+            <li><a href="services.html">Boat Slip Rentals</a></li>
+            <li><a href="services.html">Amenities & Facilities</a></li>
+            <li><a href="services.html">24/7 Security</a></li>
+            <li><a href="services.html">Marina Support</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
           <h4>Contact Info</h4>
           <ul class="footer-links">
-            <li><i class="fas fa-envelope"></i> info@nexustech.com</li>
-            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+            <li><i class="fas fa-envelope"></i> info@harbormarina.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 789-0123</li>
+            <li><i class="fas fa-map-marker-alt"></i> 456 Harbor Drive, Coastal City, CA 90210</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 NexusTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>&copy; 2024 Harbor Marina. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </div>
   </footer>

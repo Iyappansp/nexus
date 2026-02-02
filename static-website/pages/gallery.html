@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Marina Gallery - View Our Facilities & Harbor</title>
+  <meta name="description" content="Explore views of our marina, boat slips, docking facilities, and surrounding harbor. See the quality, cleanliness, and calm environment of Harbor Marina.">
+  <meta name="keywords" content="marina photos, boat slip gallery, marina facilities, harbor views, marina images">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" data-testid="main-navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-brand" data-testid="navbar-brand">
+        <i class="fas fa-anchor"></i> Harbor Marina
+      </a>
+      
+      <ul class="navbar-nav" data-testid="navbar-menu">
+        <li><a href="../index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="tariff.html" data-testid="nav-tariff">Tariff</a></li>
+        <li><a href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="hero" data-testid="gallery-hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/Harbor Reflections.webp'); background-size: cover; background-position: center; min-height: 50vh; display: flex; align-items: center; color: white;">
+    <div class="container">
+      <div class="hero-content">
+        <nav class="breadcrumb">
+          <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Gallery</span>
+        </nav>
+        <h1 data-testid="gallery-title" style="color: white;">Marina Gallery</h1>
+        <p class="hero-description" data-testid="gallery-description" style="color: rgba(255,255,255,0.9);">
+          Explore views of our marina, boat slips, docking facilities, and surrounding harbor. Our gallery highlights the quality, cleanliness, and calm environment of the marina.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Categories -->
+  <section class="section section-lg" data-testid="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Visual Tour</span>
+        <h2 class="section-title">Explore Our Marina</h2>
+      </div>
+      
+      <!-- Marina Overview -->
+      <div style="margin-bottom: var(--space-5);">
+        <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-3); font-family: var(--font-heading);">Marina Overview</h3>
+        <div class="grid grid-3">
+          <div class="card" data-testid="gallery-item-1">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Harbor at Sunset" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Harbor at Sunset</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Beautiful golden hour view of the protected harbor</p>
+          </div>
+          
+          <div class="card" data-testid="gallery-item-2">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80" alt="Aerial View" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Aerial View</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Bird's eye view showing organized slip layout</p>
+          </div>
+          
+          <div class="card" data-testid="gallery-item-3">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="../assets/images/Marina Entrance.webp" alt="Marina Entrance" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Marina Entrance</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Welcoming entrance with clear navigation markers</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Boat Slips & Docks -->
+      <div style="margin-bottom: var(--space-5);">
+        <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-3); font-family: var(--font-heading);">Boat Slips & Docks</h3>
+        <div class="grid grid-3">
+          <div class="card" data-testid="gallery-item-4">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="../assets/images/Floating Docks.webp" alt="Floating Docks" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Floating Docks</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Modern floating dock system with boats moored</p>
+          </div>
+          
+          <div class="card" data-testid="gallery-item-5">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" alt="Slip Details" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Slip Details</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Close-up of utilities and mooring equipment</p>
+          </div>
+          
+          <div class="card" data-testid="gallery-item-6">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=800&q=80" alt="Dock Walkways" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Dock Walkways</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Well-maintained walkways with safety railings</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Facilities & Amenities -->
+      <div style="margin-bottom: var(--space-5);">
+        <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-3); font-family: var(--font-heading);">Facilities & Amenities</h3>
+        <div class="grid grid-3">
+          <div class="card" data-testid="gallery-item-7">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="../assets/images/Fuel Dock.webp" alt="Fuel Dock" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Fuel Dock</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Convenient fuel services with modern pumps</p>
+          </div>
+          
+          <div class="card" data-testid="gallery-item-8">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Restroom Facilities" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Restroom Facilities</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Clean, modern restrooms and showers</p>
+          </div>
+          
+          <div class="card" data-testid="gallery-item-9">
+            <div style="width: 100%; height: 200px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=800&q=80" alt="Parking Area" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Parking Area</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Secure parking facilities for marina guests</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Night Views -->
+      <div>
+        <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-3); font-family: var(--font-heading);">Night Views</h3>
+        <div class="grid grid-2">
+          <div class="card" data-testid="gallery-item-10">
+            <div style="width: 100%; height: 250px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="../assets/images/Illuminated Docks.webp" alt="Illuminated Docks" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Illuminated Docks</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">LED lighting creates a safe and beautiful nighttime atmosphere</p>
+          </div>
+          
+          <div class="card" data-testid="gallery-item-11">
+            <div style="width: 100%; height: 250px; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-2);">
+              <img src="../assets/images/Harbor Reflections.webp" alt="Harbor Reflections" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 style="font-weight: 600; margin-bottom: var(--space-1);">Harbor Reflections</h4>
+            <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Peaceful evening scene with lights reflecting on calm water</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Note about images -->
+  <section class="section bg-light" data-testid="image-note">
+    <div class="container container-narrow">
+      <div class="card" style="text-align: center;">
+        <i class="fas fa-camera" style="font-size: 3rem; color: var(--color-primary); margin-bottom: var(--space-2);"></i>
+        <h3 class="card-title">Visit Us for a Personal Tour</h3>
+        <p class="card-text">
+          While these placeholders represent our marina facilities, we invite you to visit Harbor Marina in person to experience the quality and professionalism firsthand. Contact us to schedule a tour of our facilities.
+        </p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: var(--space-3);">
+          Schedule a Tour <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" data-testid="cta-section">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Ready to Make Harbor Marina Your Home Port?</h2>
+        <p>
+          Contact us today to learn more about our facilities, check availability, and secure your boat slip.
+        </p>
+        <a href="contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
+          Get In Touch <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-testid="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4><i class="fas fa-anchor"></i> Harbor Marina</h4>
+          <p>
+            Providing secure, well-maintained boat slip rentals with professional support and modern facilities for all vessel types.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Marina</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tariff.html">Tariff</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Boat Slip Rentals</a></li>
+            <li><a href="services.html">Amenities & Facilities</a></li>
+            <li><a href="services.html">24/7 Security</a></li>
+            <li><a href="services.html">Marina Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> info@harbormarina.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 789-0123</li>
+            <li><i class="fas fa-map-marker-alt"></i> 456 Harbor Drive, Coastal City, CA 90210</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Harbor Marina. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top" data-testid="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

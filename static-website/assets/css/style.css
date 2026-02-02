@@ -528,11 +528,12 @@ textarea.form-control {
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--color-border);
   position: relative;
+  height: 100%;
 }
 
 .testimonial-text {
-  font-size: var(--text-lg);
-  color: var(--color-text);
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
   margin-bottom: var(--space-3);
   font-style: italic;
 }
@@ -544,6 +545,7 @@ textarea.form-control {
 }
 
 .testimonial-avatar {
+  min-width: 48px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -553,6 +555,7 @@ textarea.form-control {
   justify-content: center;
   color: white;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .testimonial-info h5 {
@@ -745,6 +748,70 @@ textarea.form-control {
   }
 }
 
+/* FAQ Accordion */
+.faq-container {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.accordion-button {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: left;
+  transition: all var(--transition-fast);
+  font-family: var(--font-primary);
+}
+
+.accordion-button:hover {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-primary);
+}
+
+.accordion-button.active {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.accordion-button i {
+  transition: transform var(--transition-base);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.accordion-button.active i {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+.accordion-content {
+  padding: var(--space-4);
+  background-color: var(--color-surface);
+  display: none;
+}
+
+.accordion-content p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
 /* Utility Classes */
 .text-center { text-align: center; }
 .text-primary { color: var(--color-primary); }
@@ -754,3 +821,29 @@ textarea.form-control {
 .mt-4 { margin-top: var(--space-4); }
 .mb-2 { margin-bottom: var(--space-2); }
 .mb-4 { margin-bottom: var(--space-4); }
+
+/* Breadcrumbs */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.breadcrumb a:hover {
+  opacity: 0.7;
+}
+
+.breadcrumb i {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}

@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- SEO Meta Tags -->
-  <title>About NexusTech - Our Story, Mission & Expert Team</title>
-  <meta name="description" content="Learn about NexusTech Solutions, our mission to drive digital transformation, and meet the expert team behind our innovative IT services.">
-  <meta name="keywords" content="about NexusTech, IT consulting company, technology experts, our mission, our team">
+  <title>About Harbor Marina - Safe & Professional Boat Slip Rentals</title>
+  <meta name="description" content="Learn about Harbor Marina's commitment to safety, security, and professional service. Discover our facilities, regulations, and what makes us the trusted choice for boat slip rentals.">
+  <meta name="keywords" content="about marina, marina safety, boat slip security, marina regulations, professional marina">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +32,15 @@
   <nav class="navbar" data-testid="main-navbar">
     <div class="navbar-container">
       <a href="../index.html" class="navbar-brand" data-testid="navbar-brand">
-        <i class="fas fa-rocket"></i> NexusTech
+        <i class="fas fa-anchor"></i> Harbor Marina
       </a>
       
       <ul class="navbar-nav" data-testid="navbar-menu">
         <li><a href="../index.html" data-testid="nav-home">Home</a></li>
         <li><a href="about.html" data-testid="nav-about">About</a></li>
         <li><a href="services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="tariff.html" data-testid="nav-tariff">Tariff</a></li>
+        <li><a href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
         <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
         <li>
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
@@ -57,56 +59,59 @@
   </nav>
 
   <!-- Page Hero -->
-  <section class="hero" data-testid="about-hero">
+  <section class="hero" data-testid="about-hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/Marina Entrance.webp'); background-size: cover; background-position: center; min-height: 50vh; display: flex; align-items: center; color: white;">
     <div class="container">
       <div class="hero-content">
-        <h1 data-testid="about-title">Driving Innovation Through Technology Excellence</h1>
-        <p class="hero-description" data-testid="about-description">
-          For over a decade, NexusTech has been at the forefront of digital transformation, helping businesses harness technology to achieve extraordinary results.
+        <nav class="breadcrumb">
+          <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>About</span>
+        </nav>
+        <h1 data-testid="about-title" style="color: white;">About Harbor Marina</h1>
+        <p class="hero-description" data-testid="about-description" style="color: rgba(255,255,255,0.9);">
+          A safe and comfortable docking experience in protected waters with modern infrastructure and dependable services.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Company Story -->
-  <section class="section section-lg" data-testid="story-section">
+  <!-- Marina Overview -->
+  <section class="section section-lg" data-testid="overview-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Our Journey</span>
-        <h2 class="section-title">The NexusTech Story</h2>
+        <span class="section-badge">Our Facility</span>
+        <h2 class="section-title">Marina Overview</h2>
       </div>
       
       <div class="grid grid-2" style="align-items: center;">
-        <div data-testid="story-content">
+        <div data-testid="overview-content">
           <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--space-3);">
-            Founded in 2013 by a team of passionate technologists and business strategists, NexusTech emerged from a simple yet powerful vision: to bridge the gap between cutting-edge technology and business objectives.
+            Our marina is designed to offer a safe and comfortable docking experience for boat owners. Located in protected waters, the facility provides easy access, modern infrastructure, and dependable services throughout the year.
           </p>
           <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--space-3);">
-            What started as a small consulting firm has grown into a full-service technology partner, serving Fortune 500 companies and innovative startups alike. Our growth has been fueled by one principle: relentless focus on client success.
+            We understand that your vessel is a significant investment, which is why we've created a marina environment that prioritizes security, convenience, and professional support. Our team is dedicated to ensuring that every boat owner feels confident and well-cared for.
           </p>
           <p style="font-size: var(--text-lg); color: var(--color-text-secondary);">
-            Today, we're proud to have helped over 500 organizations navigate digital transformation, implement cloud solutions, enhance cybersecurity, and build custom software that powers their operations.
+            Whether you're a seasoned sailor or new to boating, our marina offers the perfect combination of accessibility and protection, making it an ideal home for your vessel.
           </p>
         </div>
         
-        <div class="card" data-testid="story-stats">
-          <h3 class="card-title">By the Numbers</h3>
+        <div class="card" data-testid="overview-stats">
+          <h3 class="card-title">Our Facilities</h3>
           <div style="display: grid; gap: var(--space-3); margin-top: var(--space-3);">
             <div>
-              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2013</div>
-              <div style="color: var(--color-text-secondary);">Year Founded</div>
+              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">200+</div>
+              <div style="color: var(--color-text-secondary);">Boat Slips Available</div>
             </div>
             <div>
-              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">500+</div>
-              <div style="color: var(--color-text-secondary);">Clients Served</div>
+              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">24/7</div>
+              <div style="color: var(--color-text-secondary);">Security Monitoring</div>
             </div>
             <div>
-              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">50+</div>
-              <div style="color: var(--color-text-secondary);">Team Members</div>
+              <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">100%</div>
+              <div style="color: var(--color-text-secondary);">Protected Harbor</div>
             </div>
             <div>
               <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">15+</div>
-              <div style="color: var(--color-text-secondary);">Countries Reached</div>
+              <div style="color: var(--color-text-secondary);">Years of Service</div>
             </div>
           </div>
         </div>
@@ -114,268 +119,137 @@
     </div>
   </section>
 
-  <!-- Mission & Vision -->
-  <section class="section bg-light" data-testid="mission-section">
+  <!-- Safety & Regulations -->
+  <section class="section bg-light" data-testid="safety-section">
     <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Your Safety Matters</span>
+        <h2 class="section-title">Safety & Regulations</h2>
+        <p class="section-description">
+          Safety is a top priority at our marina. All docks and facilities are maintained according to safety standards to protect both vessels and guests.
+        </p>
+      </div>
+      
       <div class="grid grid-2">
-        <div class="card" data-testid="mission-card">
+        <div class="card" data-testid="safety-surveillance">
           <div class="card-icon">
-            <i class="fas fa-bullseye"></i>
+            <i class="fas fa-video"></i>
           </div>
-          <h3 class="card-title">Our Mission</h3>
-          <p class="card-text" style="font-size: var(--text-lg);">
-            To empower organizations of all sizes with innovative technology solutions that drive measurable business outcomes, enhance operational efficiency, and create competitive advantages in an increasingly digital world.
+          <h3 class="card-title">24/7 Surveillance Cameras</h3>
+          <p class="card-text">
+            Comprehensive camera coverage throughout the marina ensures continuous monitoring of all dock areas and entry points.
           </p>
         </div>
         
-        <div class="card" data-testid="vision-card">
+        <div class="card" data-testid="safety-access">
           <div class="card-icon">
-            <i class="fas fa-eye"></i>
+            <i class="fas fa-lock"></i>
           </div>
-          <h3 class="card-title">Our Vision</h3>
-          <p class="card-text" style="font-size: var(--text-lg);">
-            To be the most trusted technology partner for businesses worldwide, recognized for our expertise, innovation, and unwavering commitment to client success in every engagement.
+          <h3 class="card-title">Controlled Dock Access</h3>
+          <p class="card-text">
+            Gated entry with keycard or code access ensures only authorized personnel and boat owners can enter the marina.
           </p>
         </div>
+        
+        <div class="card" data-testid="safety-fire">
+          <div class="card-icon">
+            <i class="fas fa-fire-extinguisher"></i>
+          </div>
+          <h3 class="card-title">Fire Safety Equipment</h3>
+          <p class="card-text">
+            Fire extinguishers and safety equipment strategically placed throughout the marina for immediate emergency response.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="safety-weather">
+          <div class="card-icon">
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+          <h3 class="card-title">Weather Condition Monitoring</h3>
+          <p class="card-text">
+            Real-time weather tracking and alerts to keep boat owners informed of changing conditions and potential hazards.
+          </p>
+        </div>
+      </div>
+      
+      <div class="card" style="margin-top: var(--space-4); background: var(--color-primary-light); border-left: 4px solid var(--color-primary);" data-testid="regulations-notice">
+        <h3 class="card-title">
+          <i class="fas fa-info-circle" style="color: var(--color-primary);"></i> Marina Regulations
+        </h3>
+        <p class="card-text">
+          All boat owners must follow marina rules and local maritime regulations. This includes proper vessel registration, adherence to speed limits within the marina, proper waste disposal, and respectful conduct toward other marina users. Our staff is available to answer any questions about specific regulations.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Core Values -->
-  <section class="section section-lg" data-testid="values-section">
+  <!-- Why Choose Us -->
+  <section class="section section-lg" data-testid="why-choose-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">What Drives Us</span>
-        <h2 class="section-title">Our Core Values</h2>
-        <p class="section-description">
-          The principles that guide every decision, project, and client interaction at NexusTech.
-        </p>
+        <span class="section-badge">Our Commitment</span>
+        <h2 class="section-title">Why Choose Harbor Marina</h2>
       </div>
       
       <div class="grid grid-3">
-        <div class="card" data-testid="value-excellence">
+        <div class="card" data-testid="advantage-location">
           <div class="card-icon">
-            <i class="fas fa-star"></i>
+            <i class="fas fa-map-marked-alt"></i>
           </div>
-          <h3 class="card-title">Excellence</h3>
+          <h3 class="card-title">Prime Location</h3>
           <p class="card-text">
-            We pursue the highest standards in everything we do, from code quality to client communication.
+            Situated in protected waters with easy navigation access, perfect for both day trips and long-term docking.
           </p>
         </div>
         
-        <div class="card" data-testid="value-innovation">
+        <div class="card" data-testid="advantage-modern">
           <div class="card-icon">
-            <i class="fas fa-lightbulb"></i>
+            <i class="fas fa-tools"></i>
           </div>
-          <h3 class="card-title">Innovation</h3>
+          <h3 class="card-title">Modern Infrastructure</h3>
           <p class="card-text">
-            We embrace emerging technologies and creative problem-solving to deliver forward-thinking solutions.
+            State-of-the-art floating and fixed docks with full utility hookups and well-maintained facilities.
           </p>
         </div>
         
-        <div class="card" data-testid="value-integrity">
+        <div class="card" data-testid="advantage-support">
           <div class="card-icon">
-            <i class="fas fa-balance-scale"></i>
+            <i class="fas fa-user-tie"></i>
           </div>
-          <h3 class="card-title">Integrity</h3>
+          <h3 class="card-title">Professional Support</h3>
           <p class="card-text">
-            Transparency, honesty, and ethical practices form the foundation of our client relationships.
+            Experienced on-site staff ready to assist with docking, maintenance, and any marina-related needs.
           </p>
         </div>
         
-        <div class="card" data-testid="value-collaboration">
+        <div class="card" data-testid="advantage-security">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="card-title">Top-Tier Security</h3>
+          <p class="card-text">
+            Round-the-clock surveillance and controlled access provide complete peace of mind for your investment.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="advantage-community">
           <div class="card-icon">
             <i class="fas fa-users"></i>
           </div>
-          <h3 class="card-title">Collaboration</h3>
+          <h3 class="card-title">Boating Community</h3>
           <p class="card-text">
-            We work as true partners, combining our expertise with your business knowledge for optimal results.
+            Join a welcoming community of boat enthusiasts who share your passion for the water.
           </p>
         </div>
         
-        <div class="card" data-testid="value-agility">
+        <div class="card" data-testid="advantage-value">
           <div class="card-icon">
-            <i class="fas fa-bolt"></i>
+            <i class="fas fa-dollar-sign"></i>
           </div>
-          <h3 class="card-title">Agility</h3>
+          <h3 class="card-title">Transparent Pricing</h3>
           <p class="card-text">
-            We adapt quickly to changing requirements and market conditions, ensuring project success.
+            Competitive rates with no hidden fees, offering excellent value for premium marina services.
           </p>
-        </div>
-        
-        <div class="card" data-testid="value-impact">
-          <div class="card-icon">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h3 class="card-title">Impact</h3>
-          <p class="card-text">
-            We measure success by the tangible business value and positive outcomes we create for clients.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Leadership Team -->
-  <section class="section bg-light" data-testid="team-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Meet the Team</span>
-        <h2 class="section-title">Leadership Excellence</h2>
-        <p class="section-description">
-          Seasoned professionals with diverse expertise united by a passion for technology and client success.
-        </p>
-      </div>
-      
-      <div class="grid grid-3">
-        <div class="card text-center" data-testid="team-member-1">
-          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
-            JD
-          </div>
-          <h3 class="card-title">James Davidson</h3>
-          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
-            CEO & Founder
-          </p>
-          <p class="card-text">
-            20+ years in enterprise technology. Previously led digital transformation at Fortune 100 companies. MIT Computer Science graduate.
-          </p>
-        </div>
-        
-        <div class="card text-center" data-testid="team-member-2">
-          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
-            AR
-          </div>
-          <h3 class="card-title">Aisha Rahman</h3>
-          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
-            CTO
-          </p>
-          <p class="card-text">
-            Expert in cloud architecture and cybersecurity. Former principal engineer at major tech firms. Stanford Engineering alumna.
-          </p>
-        </div>
-        
-        <div class="card text-center" data-testid="team-member-3">
-          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
-            MW
-          </div>
-          <h3 class="card-title">Marcus Williams</h3>
-          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
-            VP of Consulting
-          </p>
-          <p class="card-text">
-            15 years of IT strategy consulting. Specialized in digital transformation roadmaps. MBA from Harvard Business School.
-          </p>
-        </div>
-        
-        <div class="card text-center" data-testid="team-member-4">
-          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
-            LZ
-          </div>
-          <h3 class="card-title">Lisa Zhang</h3>
-          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
-            Head of AI Solutions
-          </p>
-          <p class="card-text">
-            AI/ML pioneer with 12 years in data science. Published researcher. PhD in Artificial Intelligence from Carnegie Mellon.
-          </p>
-        </div>
-        
-        <div class="card text-center" data-testid="team-member-5">
-          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
-            RP
-          </div>
-          <h3 class="card-title">Raj Patel</h3>
-          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
-            Director of Development
-          </p>
-          <p class="card-text">
-            Full-stack architect with expertise in scalable systems. Led development teams at unicorn startups. Berkeley CS graduate.
-          </p>
-        </div>
-        
-        <div class="card text-center" data-testid="team-member-6">
-          <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; font-weight: 700;">
-            EK
-          </div>
-          <h3 class="card-title">Emma Kowalski</h3>
-          <p style="color: var(--color-primary); font-weight: 600; margin-bottom: var(--space-2);">
-            Chief Security Officer
-          </p>
-          <p class="card-text">
-            Cybersecurity expert with government and private sector experience. Certified ethical hacker. Multiple security certifications.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Company Timeline -->
-  <section class="section section-lg" data-testid="timeline-section">
-    <div class="container container-narrow">
-      <div class="section-header">
-        <span class="section-badge">Our Journey</span>
-        <h2 class="section-title">Milestones & Achievements</h2>
-      </div>
-      
-      <div style="display: grid; gap: var(--space-4);">
-        <div class="card" data-testid="milestone-1">
-          <div style="display: flex; gap: var(--space-3); align-items: start;">
-            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2013</div>
-            <div>
-              <h3 class="card-title">The Beginning</h3>
-              <p class="card-text">
-                NexusTech founded by three technology veterans with a vision to revolutionize IT consulting.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card" data-testid="milestone-2">
-          <div style="display: flex; gap: var(--space-3); align-items: start;">
-            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2015</div>
-            <div>
-              <h3 class="card-title">Major Expansion</h3>
-              <p class="card-text">
-                Opened offices in New York and London. Team grew to 25+ consultants. First Fortune 500 client.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card" data-testid="milestone-3">
-          <div style="display: flex; gap: var(--space-3); align-items: start;">
-            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2018</div>
-            <div>
-              <h3 class="card-title">Cloud Excellence</h3>
-              <p class="card-text">
-                Achieved AWS Advanced Consulting Partner status. Launched dedicated cloud migration practice.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card" data-testid="milestone-4">
-          <div style="display: flex; gap: var(--space-3); align-items: start;">
-            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2020</div>
-            <div>
-              <h3 class="card-title">AI Innovation Lab</h3>
-              <p class="card-text">
-                Established AI & Machine Learning center of excellence. Helped 100+ clients implement AI solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card" data-testid="milestone-5">
-          <div style="display: flex; gap: var(--space-3); align-items: start;">
-            <div style="min-width: 80px; font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); font-family: var(--font-heading);">2024</div>
-            <div>
-              <h3 class="card-title">Global Recognition</h3>
-              <p class="card-text">
-                Named "Top 50 IT Consulting Firms" by industry publications. Serving clients across 15+ countries.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -385,15 +259,13 @@
   <section class="section" data-testid="cta-section">
     <div class="container">
       <div class="cta-section">
-        <h2>Join Us on the Journey</h2>
+        <h2>Experience the Difference</h2>
         <p>
-          Whether you're looking to transform your technology infrastructure or explore career opportunities with a dynamic team, we'd love to hear from you.
+          Discover why boat owners trust Harbor Marina for secure, convenient, and professional slip rentals. Contact us today to learn more or schedule a marina tour.
         </p>
-        <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
-            Get In Touch
-          </a>
-        </div>
+        <a href="contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
+          Contact Us <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -403,14 +275,14 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h4><i class="fas fa-rocket"></i> NexusTech</h4>
+          <h4><i class="fas fa-anchor"></i> Harbor Marina</h4>
           <p>
-            Empowering businesses through innovative technology solutions and strategic consulting services.
+            Providing secure, well-maintained boat slip rentals with professional support and modern facilities for all vessel types.
           </p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
@@ -419,34 +291,36 @@
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">About Marina</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="tariff.html">Tariff</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
-          <h4>Services</h4>
+          <h4>Our Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html">Cloud Solutions</a></li>
-            <li><a href="services.html">IT Consulting</a></li>
-            <li><a href="services.html">Cybersecurity</a></li>
-            <li><a href="services.html">Custom Development</a></li>
+            <li><a href="services.html">Boat Slip Rentals</a></li>
+            <li><a href="services.html">Amenities & Facilities</a></li>
+            <li><a href="services.html">24/7 Security</a></li>
+            <li><a href="services.html">Marina Support</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
           <h4>Contact Info</h4>
           <ul class="footer-links">
-            <li><i class="fas fa-envelope"></i> info@nexustech.com</li>
-            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+            <li><i class="fas fa-envelope"></i> info@harbormarina.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 789-0123</li>
+            <li><i class="fas fa-map-marker-alt"></i> 456 Harbor Drive, Coastal City, CA 90210</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 NexusTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>&copy; 2024 Harbor Marina. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </div>
   </footer>

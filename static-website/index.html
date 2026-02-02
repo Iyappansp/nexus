@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- SEO Meta Tags -->
-  <title>NexusTech Solutions - Premier IT Consulting & Digital Transformation Services</title>
-  <meta name="description" content="Transform your business with NexusTech's enterprise IT solutions. Expert consulting, cloud services, and digital innovation for forward-thinking companies.">
-  <meta name="keywords" content="IT consulting, digital transformation, cloud services, enterprise solutions, technology consulting">
-  <meta name="author" content="NexusTech Solutions">
+  <title>Marina & Boat Slip Rentals You Can Rely On - Secure Docking & Leasing</title>
+  <meta name="description" content="Secure, well-maintained boat slip rentals in a calm and accessible marina. Short-term docking and long-term slip leasing with 24/7 security and professional support.">
+  <meta name="keywords" content="marina, boat slip rental, boat docking, yacht slip, marina services, boat storage, slip leasing">
+  <meta name="author" content="Harbor Marina">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="NexusTech Solutions - Premier IT Consulting Services">
-  <meta property="og:description" content="Transform your business with enterprise IT solutions and digital innovation.">
+  <meta property="og:title" content="Marina & Boat Slip Rentals You Can Rely On">
+  <meta property="og:description" content="Secure boat slip rentals with 24/7 security, modern facilities, and professional support for all vessel types.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nexustech.example.com">
+  <meta property="og:url" content="https://harbormarina.example.com">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,13 +39,15 @@
   <nav class="navbar" data-testid="main-navbar">
     <div class="navbar-container">
       <a href="index.html" class="navbar-brand" data-testid="navbar-brand">
-        <i class="fas fa-rocket"></i> NexusTech
+        <i class="fas fa-anchor"></i> Harbor Marina
       </a>
       
       <ul class="navbar-nav" data-testid="navbar-menu">
         <li><a href="index.html" data-testid="nav-home">Home</a></li>
         <li><a href="pages/about.html" data-testid="nav-about">About</a></li>
         <li><a href="pages/services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="pages/tariff.html" data-testid="nav-tariff">Tariff</a></li>
+        <li><a href="pages/gallery.html" data-testid="nav-gallery">Gallery</a></li>
         <li><a href="pages/contact.html" data-testid="nav-contact">Contact</a></li>
         <li>
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
@@ -64,226 +66,219 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" data-testid="hero-section">
+  <section class="hero" data-testid="hero-section" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/Marina Entrance.webp'); background-size: cover; background-position: center; min-height: 80vh; display: flex; align-items: center; color: white;">
     <div class="container">
       <div class="hero-content">
-        <h1 data-testid="hero-title">Transform Your Business with Cutting-Edge Technology</h1>
-        <p class="hero-description" data-testid="hero-description">
-          We deliver enterprise-grade IT solutions that drive innovation, efficiency, and growth. Partner with industry experts who understand your challenges.
+        <h1 data-testid="hero-title" style="color: white; text-shadow: 0 4px 10px rgba(0,0,0,0.3);">Marina & Boat Slip Rentals You Can Rely On</h1>
+        <p class="hero-description" data-testid="hero-description" style="color: rgba(255,255,255,0.9); font-size: var(--text-xl);">
+          We provide secure, well-maintained boat slip rentals in a calm and accessible marina. Whether you need short-term docking or long-term slip leasing, our marina offers safety, convenience, and professional support for all types of vessels.
         </p>
         <div class="hero-cta">
-          <a href="pages/contact.html" class="btn btn-primary btn-lg" data-testid="cta-get-started">
-            Get Started <i class="fas fa-arrow-right"></i>
+          <a href="pages/tariff.html" class="btn btn-primary btn-lg" data-testid="cta-get-started">
+            Check Availability <i class="fas fa-arrow-right"></i>
           </a>
-          <a href="pages/services.html" class="btn btn-secondary btn-lg" data-testid="cta-learn-more">
-            Our Services
+          <a href="pages/contact.html" class="btn btn-secondary btn-lg" data-testid="cta-learn-more" style="color: white; border-color: white;">
+            Contact Marina Team
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="section bg-light" data-testid="stats-section">
+  <!-- Marina Overview -->
+  <section class="section bg-light" data-testid="overview-section">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item" data-testid="stat-clients">
-          <div class="stat-number">500+</div>
-          <div class="stat-label">Happy Clients</div>
+      <div class="grid grid-2" style="align-items: center; gap: var(--space-8);">
+        <div>
+          <div class="section-header" style="text-align: left; margin-bottom: var(--space-4);">
+            <span class="section-badge" data-testid="overview-badge">About Our Marina</span>
+            <h2 class="section-title" data-testid="overview-title">Marina Overview</h2>
+          </div>
+          <p class="section-description" data-testid="overview-description" style="text-align: left;">
+            Our marina is designed to offer a safe and comfortable docking experience for boat owners. Located in protected waters, the facility provides easy access, modern infrastructure, and dependable services throughout the year.
+          </p>
+          <p>
+            Experience the best in boating at Harbor Marina. We provide secure, well-maintained boat slip rentals with professional support and modern facilities for all vessel types.
+          </p>
+          <div style="margin-top: var(--space-4);">
+            <a href="pages/about.html" class="btn btn-secondary">Learn More About Us <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="stat-item" data-testid="stat-projects">
-          <div class="stat-number">1,200+</div>
-          <div class="stat-label">Projects Completed</div>
-        </div>
-        <div class="stat-item" data-testid="stat-experts">
-          <div class="stat-number">50+</div>
-          <div class="stat-label">Expert Consultants</div>
-        </div>
-        <div class="stat-item" data-testid="stat-satisfaction">
-          <div class="stat-number">98%</div>
-          <div class="stat-label">Client Satisfaction</div>
+        <div style="position: relative;">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1000&q=80" alt="Aerial view of Harbor Marina" style="border-radius: var(--border-radius-xl); box-shadow: var(--shadow-xl);">
+          <div style="position: absolute; bottom: -20px; right: -20px; background: var(--color-primary); color: white; padding: var(--space-3); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: var(--space-2);">
+            <i class="fas fa-anchor" style="font-size: 2rem;"></i>
+            <div>
+              <div style="font-weight: 700; font-size: 1.25rem;">15+ Years</div>
+              <div style="font-size: var(--text-xs); opacity: 0.9;">Professional Service</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Overview -->
-  <section class="section section-lg" data-testid="services-section">
+  <!-- Key Features -->
+  <section class="section section-lg" data-testid="features-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge" data-testid="services-badge">What We Offer</span>
-        <h2 class="section-title" data-testid="services-title">Comprehensive IT Solutions</h2>
-        <p class="section-description" data-testid="services-description">
-          From strategy to implementation, we provide end-to-end technology services tailored to your business needs.
-        </p>
+        <span class="section-badge">Our Facilities</span>
+        <h2 class="section-title">Key Features</h2>
       </div>
       
       <div class="grid grid-3">
-        <div class="card" data-testid="service-cloud">
+        <div class="card" data-testid="feature-harbor">
           <div class="card-icon">
-            <i class="fas fa-cloud"></i>
+            <i class="fas fa-water"></i>
           </div>
-          <h3 class="card-title">Cloud Solutions</h3>
+          <h3 class="card-title">Protected Harbor Location</h3>
           <p class="card-text">
-            Seamless migration, management, and optimization of cloud infrastructure with AWS, Azure, and Google Cloud expertise.
+            Situated in calm, protected waters ensuring the safety and security of your vessel year-round.
           </p>
         </div>
         
-        <div class="card" data-testid="service-consulting">
+        <div class="card" data-testid="feature-docks">
           <div class="card-icon">
-            <i class="fas fa-lightbulb"></i>
+            <i class="fas fa-ship"></i>
           </div>
-          <h3 class="card-title">IT Consulting</h3>
+          <h3 class="card-title">Floating and Fixed Docks</h3>
           <p class="card-text">
-            Strategic technology guidance to align your IT investments with business objectives and drive measurable ROI.
+            Modern dock infrastructure with both floating and fixed options to accommodate all vessel types.
           </p>
         </div>
         
-        <div class="card" data-testid="service-security">
+        <div class="card" data-testid="feature-security">
           <div class="card-icon">
             <i class="fas fa-shield-alt"></i>
           </div>
-          <h3 class="card-title">Cybersecurity</h3>
+          <h3 class="card-title">24/7 Security Monitoring</h3>
           <p class="card-text">
-            Comprehensive security solutions to protect your digital assets from evolving threats and ensure compliance.
+            Round-the-clock surveillance and controlled access for complete peace of mind.
           </p>
         </div>
         
-        <div class="card" data-testid="service-development">
+        <div class="card" data-testid="feature-access">
           <div class="card-icon">
-            <i class="fas fa-code"></i>
+            <i class="fas fa-compass"></i>
           </div>
-          <h3 class="card-title">Custom Development</h3>
+          <h3 class="card-title">Easy Navigation Access</h3>
           <p class="card-text">
-            Bespoke software solutions built with modern technologies to solve unique business challenges efficiently.
+            Simple entry routes suitable for both experienced and new boaters.
           </p>
         </div>
         
-        <div class="card" data-testid="service-ai">
+        <div class="card" data-testid="feature-staff">
           <div class="card-icon">
-            <i class="fas fa-brain"></i>
+            <i class="fas fa-users"></i>
           </div>
-          <h3 class="card-title">AI & Analytics</h3>
+          <h3 class="card-title">Professional On-Site Staff</h3>
           <p class="card-text">
-            Harness the power of artificial intelligence and data analytics to gain actionable insights and competitive advantage.
-          </p>
-        </div>
-        
-        <div class="card" data-testid="service-support">
-          <div class="card-icon">
-            <i class="fas fa-headset"></i>
-          </div>
-          <h3 class="card-title">24/7 Support</h3>
-          <p class="card-text">
-            Round-the-clock technical support and maintenance to ensure your systems run smoothly without interruption.
-          </p>
-        </div>
-      </div>
-      
-      <div class="text-center mt-4">
-        <a href="pages/services.html" class="btn btn-primary" data-testid="view-all-services">
-          View All Services <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="section bg-light" data-testid="why-choose-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Our Advantage</span>
-        <h2 class="section-title">Why Leading Companies Choose NexusTech</h2>
-      </div>
-      
-      <div class="grid grid-2">
-        <div class="card" data-testid="advantage-expertise">
-          <h3 class="card-title">
-            <i class="fas fa-award text-primary"></i> Deep Industry Expertise
-          </h3>
-          <p class="card-text">
-            Our team brings decades of combined experience across finance, healthcare, retail, and manufacturing sectors.
-          </p>
-        </div>
-        
-        <div class="card" data-testid="advantage-innovation">
-          <h3 class="card-title">
-            <i class="fas fa-rocket text-primary"></i> Innovation-First Approach
-          </h3>
-          <p class="card-text">
-            We stay ahead of technology trends, ensuring you benefit from the latest tools and methodologies.
-          </p>
-        </div>
-        
-        <div class="card" data-testid="advantage-results">
-          <h3 class="card-title">
-            <i class="fas fa-chart-line text-primary"></i> Proven Results
-          </h3>
-          <p class="card-text">
-            Track record of delivering measurable business outcomes: 40% average efficiency gains, 60% cost reductions.
-          </p>
-        </div>
-        
-        <div class="card" data-testid="advantage-partnership">
-          <h3 class="card-title">
-            <i class="fas fa-handshake text-primary"></i> True Partnership
-          </h3>
-          <p class="card-text">
-            We don't just deliver projects – we become your trusted technology partner for long-term success.
+            Experienced marina staff available to assist with all your docking and service needs.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="section section-lg" data-testid="testimonials-section">
+  <!-- Boat Slip Rentals -->
+  <section class="section bg-light" data-testid="slips-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Client Stories</span>
-        <h2 class="section-title">What Our Clients Say</h2>
+        <span class="section-badge">Flexible Options</span>
+        <h2 class="section-title">Boat Slip Rentals</h2>
         <p class="section-description">
-          Don't just take our word for it – hear from businesses we've helped transform.
+          We offer flexible boat slip rental options to suit different needs and vessel sizes. Our slips accommodate fishing boats, sailboats, speedboats, and yachts.
         </p>
       </div>
       
-      <div class="grid grid-3">
-        <div class="testimonial" data-testid="testimonial-1">
-          <p class="testimonial-text">
-            "NexusTech transformed our legacy infrastructure into a modern, scalable cloud solution. The results exceeded our expectations."
+      <div class="grid grid-2">
+        <div class="card" data-testid="slip-sizes">
+          <h3 class="card-title">
+            <i class="fas fa-ruler-combined text-primary"></i> Multiple Slip Sizes Available
+          </h3>
+          <p class="card-text">
+            Various slip sizes to accommodate vessels from small fishing boats to large yachts.
           </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">SJ</div>
-            <div class="testimonial-info">
-              <h5>Sarah Johnson</h5>
-              <p>CTO, TechVentures Inc</p>
-            </div>
+        </div>
+        
+        <div class="card" data-testid="slip-water">
+          <h3 class="card-title">
+            <i class="fas fa-tint text-primary"></i> Fresh Water Connections
+          </h3>
+          <p class="card-text">
+            Convenient fresh water hookups at every slip for easy access.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="slip-power">
+          <h3 class="card-title">
+            <i class="fas fa-plug text-primary"></i> Electrical Power Supply
+          </h3>
+          <p class="card-text">
+            Reliable electrical connections to keep your vessel powered and ready.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="slip-mooring">
+          <h3 class="card-title">
+            <i class="fas fa-anchor text-primary"></i> Secure Mooring Points
+          </h3>
+          <p class="card-text">
+            Professional-grade cleats and mooring equipment for safe docking.
+          </p>
+        </div>
+        
+        <div class="card" data-testid="slip-lighting">
+          <h3 class="card-title">
+            <i class="fas fa-lightbulb text-primary"></i> Well-Lit Docks for Night Access
+          </h3>
+          <p class="card-text">
+            LED lighting throughout the marina for safe navigation at any hour.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-lg" data-testid="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Common Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">
+          Find answers to the most common questions about our marina and boat slip rentals.
+        </p>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item" data-testid="faq-1">
+          <button class="accordion-button">
+            <span>Do you offer long-term boat slip rentals?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, long-term and annual slip rentals are available. We offer flexible leasing options to suit your needs, whether you're looking for seasonal or year-round docking.</p>
           </div>
         </div>
         
-        <div class="testimonial" data-testid="testimonial-2">
-          <p class="testimonial-text">
-            "Their cybersecurity expertise helped us achieve compliance and gave us peace of mind. Highly professional team."
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MC</div>
-            <div class="testimonial-info">
-              <h5>Michael Chen</h5>
-              <p>CEO, SecureFinance Ltd</p>
-            </div>
+        <div class="faq-item" data-testid="faq-2">
+          <button class="accordion-button">
+            <span>Is the marina secure?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, the marina is monitored 24/7 with controlled access. We have surveillance cameras, security patrols, and gated entry to ensure the safety of all vessels and guests.</p>
           </div>
         </div>
         
-        <div class="testimonial" data-testid="testimonial-3">
-          <p class="testimonial-text">
-            "The custom software solution they built streamlined our operations and saved us 30% in operational costs annually."
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">EP</div>
-            <div class="testimonial-info">
-              <h5>Emily Parker</h5>
-              <p>Operations Director, RetailPro</p>
-            </div>
+        <div class="faq-item" data-testid="faq-3">
+          <button class="accordion-button">
+            <span>What types of boats are allowed?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>We accommodate most recreational and private vessels, subject to slip size availability. This includes fishing boats, sailboats, speedboats, and yachts. Contact us to discuss your specific vessel requirements.</p>
           </div>
         </div>
       </div>
@@ -294,12 +289,12 @@
   <section class="section" data-testid="cta-section">
     <div class="container">
       <div class="cta-section">
-        <h2>Ready to Transform Your Business?</h2>
+        <h2>Ready to Secure Your Boat Slip?</h2>
         <p>
-          Let's discuss how our technology solutions can drive your success. Schedule a free consultation with our experts today.
+          For availability, pricing details, or general inquiries, please contact our marina team. We are happy to assist you with selecting the right boat slip for your needs.
         </p>
         <a href="pages/contact.html" class="btn btn-secondary btn-lg" data-testid="cta-contact">
-          Get In Touch <i class="fas fa-arrow-right"></i>
+          Contact Us Today <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </div>
@@ -310,9 +305,9 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section" data-testid="footer-about">
-          <h4><i class="fas fa-rocket"></i> NexusTech</h4>
+          <h4><i class="fas fa-anchor"></i> Harbor Marina</h4>
           <p>
-            Empowering businesses through innovative technology solutions and strategic consulting services.
+            Providing secure, well-maintained boat slip rentals with professional support and modern facilities for all vessel types.
           </p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="LinkedIn" data-testid="social-linkedin">
@@ -321,8 +316,8 @@
             <a href="#" class="social-link" aria-label="Twitter" data-testid="social-twitter">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="social-link" aria-label="GitHub" data-testid="social-github">
-              <i class="fab fa-github"></i>
+            <a href="#" class="social-link" aria-label="Instagram" data-testid="social-instagram">
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="#" class="social-link" aria-label="Facebook" data-testid="social-facebook">
               <i class="fab fa-facebook-f"></i>
@@ -334,34 +329,36 @@
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/about.html">About Marina</a></li>
             <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/tariff.html">Tariff</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
           </ul>
         </div>
         
         <div class="footer-section" data-testid="footer-services">
-          <h4>Services</h4>
+          <h4>Our Services</h4>
           <ul class="footer-links">
-            <li><a href="pages/services.html">Cloud Solutions</a></li>
-            <li><a href="pages/services.html">IT Consulting</a></li>
-            <li><a href="pages/services.html">Cybersecurity</a></li>
-            <li><a href="pages/services.html">Custom Development</a></li>
+            <li><a href="pages/services.html">Boat Slip Rentals</a></li>
+            <li><a href="pages/services.html">Amenities & Facilities</a></li>
+            <li><a href="pages/services.html">24/7 Security</a></li>
+            <li><a href="pages/services.html">Marina Support</a></li>
           </ul>
         </div>
         
         <div class="footer-section" data-testid="footer-contact">
           <h4>Contact Info</h4>
           <ul class="footer-links">
-            <li><i class="fas fa-envelope"></i> info@nexustech.com</li>
-            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+            <li><i class="fas fa-envelope"></i> info@harbormarina.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 789-0123</li>
+            <li><i class="fas fa-map-marker-alt"></i> 456 Harbor Drive, Coastal City, CA 90210</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 NexusTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>&copy; 2024 Harbor Marina. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </div>
   </footer>
