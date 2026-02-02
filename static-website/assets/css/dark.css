@@ -45,8 +45,94 @@
   border-bottom-color: var(--color-border);
 }
 
+/* White Footer in Dark Mode */
 [data-theme="dark"] .footer {
   background-color: #020617;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .footer-section h4 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .footer-section p {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .footer-links a {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .footer-links a:hover {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .footer-bottom a {
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .footer-bottom a:hover {
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .social-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Improved text contrast for dark mode */
+[data-theme="dark"] .section-badge {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-primary-light);
+}
+
+[data-theme="dark"] select,
+[data-theme="dark"] option {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  border-color: var(--color-border);
+}
+
+/* Fix placeholder visibility in dark mode */
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+[data-theme="dark"] input::-webkit-input-placeholder,
+[data-theme="dark"] textarea::-webkit-input-placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+[data-theme="dark"] input::-moz-placeholder,
+[data-theme="dark"] textarea::-moz-placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+/* Fix card text visibility in dark mode */
+[data-theme="dark"] .card p,
+[data-theme="dark"] .card-text,
+[data-theme="dark"] .card li {
+  color: var(--color-text-secondary);
+}
+
+/* Fix badge and label visibility */
+[data-theme="dark"] .badge,
+[data-theme="dark"] .label {
+  color: #f1f5f9;
 }
 
 [data-theme="dark"] .cta-section {

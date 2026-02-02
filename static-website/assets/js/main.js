@@ -40,6 +40,34 @@
   };
 
   // ============================================
+  // RTL (Right-to-Left) Management
+  // ============================================
+  const RTLManager = {
+    init() {
+      this.rtlToggle = document.getElementById('rtl-toggle');
+      this.currentDirection = localStorage.getItem('direction') || 'ltr';
+      
+      this.setDirection(this.currentDirection);
+      
+      if (this.rtlToggle) {
+        this.rtlToggle.addEventListener('click', () => this.toggleDirection());
+      }
+    },
+    
+    setDirection(direction) {
+      document.documentElement.setAttribute('dir', direction);
+      document.body.classList.toggle('rtl', direction === 'rtl');
+      localStorage.setItem('direction', direction);
+      this.currentDirection = direction;
+    },
+    
+    toggleDirection() {
+      const newDirection = this.currentDirection === 'ltr' ? 'rtl' : 'ltr';
+      this.setDirection(newDirection);
+    }
+  };
+
+  // ============================================
   // Mobile Navigation
   // ============================================
   const MobileNav = {
@@ -418,6 +446,7 @@
   // ============================================
   function init() {
     ThemeManager.init();
+    RTLManager.init();
     MobileNav.init();
     NavbarScroll.init();
     ScrollToTop.init();

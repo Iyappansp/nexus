@@ -472,6 +472,11 @@ textarea.form-control {
   margin-bottom: var(--space-3);
 }
 
+/* White text for description in light mode */
+[data-theme="light"] .footer-section p {
+  color: white;
+}
+
 .footer-links {
   list-style: none;
 }
@@ -494,6 +499,15 @@ textarea.form-control {
   padding-top: var(--space-4);
   text-align: center;
   color: var(--color-text-muted);
+}
+
+.footer-bottom a {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+  color: white;
 }
 
 .social-links {
@@ -629,7 +643,7 @@ textarea.form-control {
 /* Scroll to Top Button */
 .scroll-top {
   position: fixed;
-  bottom: 2rem;
+  bottom: 7.5rem;
   right: 2rem;
   width: 48px;
   height: 48px;
@@ -654,6 +668,96 @@ textarea.form-control {
 .scroll-top:hover {
   background-color: var(--color-primary-dark);
   transform: translateY(-3px);
+}
+
+/* Floating Contact Icons */
+.floating-whatsapp {
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  cursor: pointer;
+  z-index: 998;
+  transition: all var(--transition-base);
+  animation: pulse 2s infinite;
+  text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  color: white;
+}
+
+.floating-phone {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  cursor: pointer;
+  z-index: 998;
+  transition: all var(--transition-base);
+  animation: pulse 2s infinite 0.5s;
+  text-decoration: none;
+}
+
+.floating-phone:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+  color: white;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.8);
+  }
+}
+
+/* Responsive adjustments for floating icons */
+@media (max-width: 768px) {
+  .floating-whatsapp {
+    left: 1rem;
+    bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .floating-phone {
+    right: 1rem;
+    bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .scroll-top {
+    right: 1rem;
+    bottom: 6rem;
+    width: 44px;
+    height: 44px;
+  }
 }
 
 /* Theme Toggle */

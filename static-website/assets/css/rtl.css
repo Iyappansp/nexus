@@ -27,6 +27,11 @@
   flex-direction: row-reverse;
 }
 
+[dir="rtl"] .btn i {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
 /* Hero RTL */
 [dir="rtl"] .hero-cta {
   flex-direction: row-reverse;
@@ -58,6 +63,22 @@
   text-align: right;
 }
 
+[dir="rtl"] .input-group {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .input-group-text {
+  border-right: 2px solid #e0e0e0;
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+}
+
+[dir="rtl"] .input-group .form-control {
+  border-left: 2px solid #e0e0e0;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+}
+
 /* Grid RTL */
 [dir="rtl"] .grid {
   direction: rtl;
@@ -69,6 +90,100 @@
   left: 2rem;
 }
 
+/* Dashboard Sidebar RTL */
+[dir="rtl"] .sidebar {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .main-content {
+  margin-left: 0;
+  margin-right: 260px;
+}
+
+[dir="rtl"] .sidebar-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-link {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-link.active::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .nav-badge {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Top Bar RTL */
+[dir="rtl"] .top-bar {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .top-bar-right {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .search-box i {
+  left: auto;
+  right: 14px;
+}
+
+[dir="rtl"] .search-box input {
+  padding: 8px 40px 8px 16px;
+}
+
+[dir="rtl"] .user-menu {
+  flex-direction: row-reverse;
+}
+
+/* Dashboard Cards RTL */
+[dir="rtl"] .stat-card-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .overview-cards {
+  direction: rtl;
+}
+
+/* Table RTL */
+[dir="rtl"] .data-table {
+  direction: rtl;
+}
+
+[dir="rtl"] .data-table th,
+[dir="rtl"] .data-table td {
+  text-align: right;
+}
+
+[dir="rtl"] .table-actions {
+  flex-direction: row-reverse;
+}
+
+/* Auth Pages RTL */
+[dir="rtl"] .auth-header {
+  text-align: right;
+}
+
+[dir="rtl"] .remember-forgot {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .social-login {
+  direction: rtl;
+}
+
+[dir="rtl"] .divider::before,
+[dir="rtl"] .divider::after {
+  direction: ltr;
+}
+
 /* Mobile Navigation RTL */
 @media (max-width: 768px) {
   [dir="rtl"] .navbar-nav {
@@ -78,5 +193,17 @@
   [dir="rtl"] .navbar-toggle {
     margin-left: 0;
     margin-right: auto;
+  }
+  
+  [dir="rtl"] .sidebar {
+    transform: translateX(100%);
+  }
+  
+  [dir="rtl"] .sidebar.active {
+    transform: translateX(0);
+  }
+  
+  [dir="rtl"] .main-content {
+    margin-right: 0;
   }
 }

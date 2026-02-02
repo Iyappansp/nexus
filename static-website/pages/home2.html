@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Premium Marina Experience - Luxury Yacht Docking | Harbor Marina</title>
+  <meta name="description" content="Experience the pinnacle of luxury docking at Harbor Marina. Premium slips, elite facilities, and 5-star service for discerning yacht owners.">
+  <meta name="keywords" content="luxury marina, yacht docking, premium boat slips, elite marina services, coastal docking">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" data-testid="main-navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-brand" data-testid="navbar-brand">
+        <i class="fas fa-anchor"></i> Harbor Marina
+      </a>
+      
+      <ul class="navbar-nav" data-testid="navbar-menu">
+        <li><a href="../index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="home2.html" data-testid="nav-home2">Home 2</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="services.html" data-testid="nav-services">Services</a></li>
+        <li><a href="tariff.html" data-testid="nav-tariff">Tariff</a></li>
+        <li><a href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        <li><a href="dashboard.html" data-testid="nav-dashboard" style="color: var(--color-primary); font-weight: 600;">Dashboard</a></li>
+        <li><a href="login.html" data-testid="nav-login" style="color: var(--color-success); font-weight: 600;">Login</a></li>
+        <li>
+          <button class="theme-toggle" id="rtl-toggle" aria-label="Toggle RTL" data-testid="rtl-toggle" title="Toggle RTL Layout">
+            <i class="fas fa-exchange-alt"></i>
+          </button>
+        </li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Premium Hero Section -->
+  <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('../assets/images/hero-premium-v2.png'); background-size: cover; background-position: center; min-height: 90vh; display: flex; align-items: center; color: white;">
+    <div class="container">
+      <div class="hero-content" style="max-width: 800px;">
+        <span class="section-badge" style="background: var(--color-primary); color: white; padding: 6px 16px; border-radius: 50px; font-weight: 700; font-size: 14px; text-transform: uppercase; margin-bottom: 24px; display: inline-block;">World-Class Marina</span>
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 24px; color: white; font-weight: 800;">Defining The Elite <br><span class="text-primary" style="color: #60a5fa !important;">Yachting Experience</span></h1>
+        <p style="font-size: var(--text-xl); line-height: 1.6; margin-bottom: 40px; color: rgba(255,255,255,0.95);">
+          Discover a sanctuary of luxury and security. Our premium berths are engineered for excellence, providing the world's most discerning boat owners with unparalleled facilities and concierge support.
+        </p>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg" style="padding: 18px 36px; border-radius: 12px; font-weight: 700;">
+            Secure Your Berth <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+          </a>
+          <a href="gallery.html" class="btn btn-outline-light btn-lg" style="padding: 18px 36px; border-radius: 12px; font-weight: 700; border: 2px solid white; color: white; background: transparent;">
+            View Elite Gallery
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Stats -->
+  <section style="background: var(--color-bg-secondary); padding: 60px 0; border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="grid grid-4 text-center">
+        <div>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">150+</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Luxury Berths</p>
+        </div>
+        <div>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">100ft</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Max Vessel Size</p>
+        </div>
+        <div>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">24/7</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Elite Security</p>
+        </div>
+        <div>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">5-Star</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Concierge Service</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Services -->
+  <section class="section section-lg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Exclusive Services</span>
+        <h2 class="section-title">Beyond Docking</h2>
+        <p class="section-description">We provide a comprehensive ecosystem of services designed for your comfort and vessel's longevity.</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card" style="padding: 40px; border-radius: 24px; transition: all 0.4s ease;">
+          <div class="card-icon" style="margin-bottom: 24px;"><i class="fas fa-crown"></i></div>
+          <h3 style="margin-bottom: 16px;">V.I.P. Concierge</h3>
+          <p>From provisioning your vessel to arranging local transport, our dedicated team handles every detail of your stay.</p>
+        </div>
+        <div class="card" style="padding: 40px; border-radius: 24px; transition: all 0.4s ease;">
+          <div class="card-icon" style="margin-bottom: 24px;"><i class="fas fa-shield-alt"></i></div>
+          <h3 style="margin-bottom: 16px;">Advanced Security</h3>
+          <p>Layered security including biometric access, 4K surveillance, and active dock patrols for absolute peace of mind.</p>
+        </div>
+        <div class="card" style="padding: 40px; border-radius: 24px; transition: all 0.4s ease;">
+          <div class="card-icon" style="margin-bottom: 24px;"><i class="fas fa-charging-station"></i></div>
+          <h3 style="margin-bottom: 16px;">Modern Utilities</h3>
+          <p>High-capacity power pedestals (up to 200A), filtered water, and gigabit Wi-Fi at every single slip.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Image Grid -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: var(--space-12);">
+        <div style="border-radius: 32px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
+          <img src="../assets/images/hero-sunset.png" alt="Marina at Sunset" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <span class="section-badge">Prime Location</span>
+          <h2 style="font-size: var(--text-3xl); margin-bottom: 24px;">The Perfect Port Of Call</h2>
+          <p style="margin-bottom: 32px;">Situated in the heart of the coast's most pristine waters, Harbor Marina offers a protected environment with effortless deep-water access.</p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 16px; display: flex; align-items: center; gap: 12px; font-weight: 600;">
+              <i class="fas fa-check-circle text-primary"></i> 20 minutes to open ocean
+            </li>
+            <li style="margin-bottom: 16px; display: flex; align-items: center; gap: 12px; font-weight: 600;">
+              <i class="fas fa-check-circle text-primary"></i> Protected basin (surge-free)
+            </li>
+            <li style="margin-bottom: 16px; display: flex; align-items: center; gap: 12px; font-weight: 600;">
+              <i class="fas fa-check-circle text-primary"></i> Proximity to fine dining & luxury shopping
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-testid="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4><i class="fas fa-anchor"></i> Harbor Marina</h4>
+          <p>
+            The premier destination for luxury yacht docking and marine services. Secure your place at the coast's most elite port.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Elite Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Main Home</a></li>
+            <li><a href="about.html">Our History</a></li>
+            <li><a href="services.html">Facilities</a></li>
+            <li><a href="tariff.html">Leasing Rates</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Inquire Now</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Member Access</h4>
+          <ul class="footer-links">
+            <li><a href="dashboard.html">Owner Dashboard</a></li>
+            <li><a href="login.html">Member Login</a></li>
+            <li><a href="services.html">Concierge Request</a></li>
+            <li><a href="services.html">Slip Maintenance</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Elite</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> vip@harbormarina.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 789-0123</li>
+            <li><i class="fas fa-map-marker-alt"></i> 456 Elite Way, Coastal City, CA 90210</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Harbor Marina Elite. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top" data-testid="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Floating Contact Icons -->
+  <a href="https://wa.me/15557890123" class="floating-whatsapp" aria-label="Contact us on WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <a href="tel:+15557890123" class="floating-phone" aria-label="Call us" target="_blank">
+    <i class="fas fa-phone-alt"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Dashboard - Harbor Marina</title>
+  <meta name="description" content="Harbor Marina Dashboard - Manage your boat slip rentals and marina services.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">⚓</div>
+        <div class="sidebar-brand">Harbor Marina</div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul style="padding: 0; margin: 0;">
+          <div class="nav-section-title">Main Menu</div>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="fas fa-th-large"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-ship"></i>
+              <span>All Boats</span>
+              <span class="nav-badge">34</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-users"></i>
+              <span>Members</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-anchor"></i>
+              <span>Slip Rentals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-user-tie"></i>
+              <span>Staff</span>
+              <span class="nav-badge">6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-tasks"></i>
+              <span>Assignments</span>
+              <span class="nav-badge" style="background: #f44336;">2</span>
+            </a>
+          </li>
+          
+          <div class="nav-section-title">Reports</div>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-chart-line"></i>
+              <span>Revenue Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-certificate"></i>
+              <span>Certificates</span>
+            </a>
+          </li>
+          
+          <div class="nav-section-title">Settings</div>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-cog"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <i class="fas fa-home"></i>
+              <span>Back to Website</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h1>Dashboard</h1>
+        </div>
+        
+        <div class="top-bar-right">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+          
+          <a href="../index.html" class="icon-btn" title="Back to Home" style="text-decoration: none; color: inherit; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-home"></i>
+          </a>
+          
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+          
+          <button class="icon-btn" id="rtl-toggle" aria-label="Toggle RTL">
+            <i class="fas fa-exchange-alt"></i>
+          </button>
+          
+          <button class="icon-btn">
+            <i class="fas fa-bell"></i>
+            <span class="badge"></span>
+          </button>
+          
+          <div class="user-menu">
+            <div class="user-avatar">MA</div>
+            <div class="user-info">
+              <div class="user-name">Marina Admin</div>
+              <div class="user-role">Administrator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard-content">
+        <!-- Overview Cards -->
+        <div class="overview-cards">
+          <div class="stat-card">
+            <div class="stat-card-header">
+              <div>
+                <div class="stat-label">Total Boats</div>
+                <div class="stat-value">1,284</div>
+                <div class="stat-subtitle">Total Boats Registered</div>
+              </div>
+              <div class="stat-icon orange">
+                <i class="fas fa-ship"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-card-header">
+              <div>
+                <div class="stat-label">Total Revenue</div>
+                <div class="stat-value">$ 1,345</div>
+                <div class="stat-subtitle">Total Course Revenue</div>
+              </div>
+              <div class="stat-icon green">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-card-header">
+              <div>
+                <div class="stat-label">Active Slip Rentals</div>
+                <div class="stat-value">1303</div>
+                <div class="stat-subtitle">Active Slip Enrollments</div>
+              </div>
+              <div class="stat-icon red">
+                <i class="fas fa-anchor"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-card-header">
+              <div>
+                <div class="stat-label">Total Services</div>
+                <div class="stat-value">576</div>
+                <div class="stat-subtitle">Total Services Available</div>
+              </div>
+              <div class="stat-icon blue">
+                <i class="fas fa-concierge-bell"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="charts-grid">
+          <!-- Slip Occupancy Progress -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3 class="chart-title">Slip Occupancy Progress</h3>
+              <p class="chart-subtitle">Slip Completion Rate</p>
+            </div>
+            <div class="chart-container">
+              <canvas id="occupancyChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Boat Distribution Map -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div style="display: flex; justify-content: space-between; align-items: start;">
+                <div>
+                  <h3 class="chart-title">Boat Distribution</h3>
+                  <p class="chart-subtitle">Online Boat Enrollment Map</p>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 24px; font-weight: 700; color: var(--color-text);">53k</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Total Boats</div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-container">
+              <canvas id="distributionChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revenue Summary & Tasks -->
+        <div class="charts-grid">
+          <!-- Revenue Summary -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3 class="chart-title">Revenue Summary</h3>
+              <div style="margin-top: 20px;">
+                <div style="font-size: 32px; font-weight: 700; color: var(--color-text); margin-bottom: 8px;">
+                  Total Revenue: $ 3,018
+                </div>
+                <button style="width: 100%; padding: 12px; background: var(--color-primary); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-bottom: 20px;">
+                  <i class="fas fa-plus me-2"></i> Add Revenue
+                </button>
+              </div>
+            </div>
+            <div style="margin-top: 20px;">
+              <div style="margin-bottom: 16px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                  <span style="color: var(--color-text); font-size: 14px;">Slip Sales</span>
+                  <span style="color: var(--color-text); font-weight: 600;">53k</span>
+                </div>
+                <div style="height: 8px; background: var(--color-background); border-radius: 4px; overflow: hidden;">
+                  <div style="width: 70%; height: 100%; background: linear-gradient(90deg, #81FBB8 0%, #28C76F 100%);"></div>
+                </div>
+              </div>
+              
+              <div style="margin-bottom: 16px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                  <span style="color: var(--color-text); font-size: 14px;">Enrollments</span>
+                  <span style="color: var(--color-text); font-weight: 600;">576</span>
+                </div>
+                <div style="height: 8px; background: var(--color-background); border-radius: 4px; overflow: hidden;">
+                  <div style="width: 85%; height: 100%; background: linear-gradient(90deg, #5EFCE8 0%, #736EFE 100%);"></div>
+                </div>
+              </div>
+              
+              <div style="margin-bottom: 16px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                  <span style="color: var(--color-text); font-size: 14px;">Service Completion Rate</span>
+                  <span style="color: var(--color-text); font-weight: 600;">70%</span>
+                </div>
+                <div style="height: 8px; background: var(--color-background); border-radius: 4px; overflow: hidden;">
+                  <div style="width: 60%; height: 100%; background: linear-gradient(90deg, #ff9a56 0%, #ff6a00 100%);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin Tasks -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3 class="chart-title">Admin Tasks</h3>
+              <p class="chart-subtitle">To-Do List (Admin)</p>
+            </div>
+            <div style="margin-top: 20px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: var(--color-background); border-radius: 8px; margin-bottom: 12px;">
+                <div>
+                  <div style="font-weight: 600; color: var(--color-text); margin-bottom: 4px;">Add new service syllabus</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Task</div>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <button class="action-btn"><i class="fas fa-external-link-alt"></i></button>
+                  <button class="action-btn"><i class="fas fa-times"></i></button>
+                </div>
+              </div>
+              
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: var(--color-background); border-radius: 8px; margin-bottom: 12px;">
+                <div>
+                  <div style="font-weight: 600; color: var(--color-text); margin-bottom: 4px;">Upload service videos</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Task</div>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <button class="action-btn"><i class="fas fa-external-link-alt"></i></button>
+                  <button class="action-btn"><i class="fas fa-times"></i></button>
+                </div>
+              </div>
+              
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: var(--color-background); border-radius: 8px; margin-bottom: 12px;">
+                <div>
+                  <div style="font-weight: 600; color: var(--color-text); margin-bottom: 4px;">Update service pricing</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Task</div>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <button class="action-btn"><i class="fas fa-external-link-alt"></i></button>
+                  <button class="action-btn"><i class="fas fa-times"></i></button>
+                </div>
+              </div>
+              
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: var(--color-background); border-radius: 8px;">
+                <div>
+                  <div style="font-weight: 600; color: var(--color-text); margin-bottom: 4px;">Review member feedback</div>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">Task</div>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <button class="action-btn"><i class="fas fa-external-link-alt"></i></button>
+                  <button class="action-btn"><i class="fas fa-times"></i></button>
+                </div>
+              </div>
+              
+              <div style="text-align: center; margin-top: 16px; font-size: 12px; color: var(--color-text-muted);">
+                Updated 3 minutes ago
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slip Rental Trends -->
+        <div class="chart-card" style="margin-bottom: 32px;">
+          <div class="chart-header">
+            <h3 class="chart-title">Slip Rental Trends (Yearly)</h3>
+            <p class="chart-subtitle">Service Enrolled - 2019</p>
+          </div>
+          <div class="chart-container" style="height: 350px;">
+            <canvas id="trendsChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Members Table -->
+        <div class="data-table-card">
+          <div class="table-header">
+            <div>
+              <h3 class="table-title">Members Table</h3>
+              <p class="table-subtitle">Enrolled Member List</p>
+            </div>
+          </div>
+          
+          <div style="overflow-x: auto;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Service</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Slip Rental - Premium</td>
+                  <td><span style="background: #28C76F; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">Active</span></td>
+                  <td>
+                    <div class="table-actions">
+                      <button class="action-btn" title="View"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn" title="Delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>Maintenance Service</td>
+                  <td><span style="background: #28C76F; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">Active</span></td>
+                  <td>
+                    <div class="table-actions">
+                      <button class="action-btn" title="View"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn" title="Delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry the Bird</td>
+                  <td>Smith</td>
+                  <td>Storage Service</td>
+                  <td><span style="background: #ff9800; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">Pending</span></td>
+                  <td>
+                    <div class="table-actions">
+                      <button class="action-btn" title="View"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn" title="Edit"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn" title="Delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="../assets/js/main.js"></script>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+      document.getElementById('sidebar').classList.toggle('active');
+    });
+
+    // Chart.js configurations
+    const chartColors = {
+      primary: '#667eea',
+      success: '#28C76F',
+      warning: '#ff9800',
+      danger: '#f44336',
+      info: '#00bcd4'
+    };
+
+    // Occupancy Chart (Doughnut)
+    const occupancyCtx = document.getElementById('occupancyChart').getContext('2d');
+    new Chart(occupancyCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Occupied', 'Available', 'Maintenance'],
+        datasets: [{
+          data: [60, 30, 10],
+          backgroundColor: ['#667eea', '#ff9a56', '#f44336'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+
+    // Distribution Chart (World Map Simulation - Pie Chart)
+    const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+    new Chart(distributionCtx, {
+      type: 'pie',
+      data: {
+        labels: ['Sailboats', 'Motorboats', 'Yachts', 'Fishing Boats'],
+        datasets: [{
+          data: [35, 25, 20, 20],
+          backgroundColor: ['#667eea', '#28C76F', '#ff9a56', '#f44336'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+
+    // Trends Chart (Bar)
+    const trendsCtx = document.getElementById('trendsChart').getContext('2d');
+    new Chart(trendsCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [
+          {
+            label: 'New Rentals',
+            data: [65, 59, 80, 81, 56, 55, 70, 85, 90, 95, 88, 92],
+            backgroundColor: '#667eea'
+          },
+          {
+            label: 'Renewals',
+            data: [45, 49, 60, 71, 46, 45, 60, 75, 80, 85, 78, 82],
+            backgroundColor: '#f5576c'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
