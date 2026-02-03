@@ -103,23 +103,32 @@
   border-color: var(--color-border);
 }
 
-/* Fix placeholder visibility in dark mode */
+/* Fix placeholder visibility in dark mode - Enhanced for premium look */
 [data-theme="dark"] input::placeholder,
 [data-theme="dark"] textarea::placeholder {
-  color: #94a3b8;
+  color: #64748b;
   opacity: 1;
+  transition: color 0.2s ease;
 }
 
 [data-theme="dark"] input::-webkit-input-placeholder,
 [data-theme="dark"] textarea::-webkit-input-placeholder {
-  color: #94a3b8;
+  color: #64748b;
   opacity: 1;
+  transition: color 0.2s ease;
 }
 
 [data-theme="dark"] input::-moz-placeholder,
 [data-theme="dark"] textarea::-moz-placeholder {
-  color: #94a3b8;
+  color: #64748b;
   opacity: 1;
+  transition: color 0.2s ease;
+}
+
+[data-theme="dark"] input:focus::placeholder,
+[data-theme="dark"] textarea:focus::placeholder {
+  color: #475569;
+  opacity: 0.8;
 }
 
 /* Fix card text visibility in dark mode */
