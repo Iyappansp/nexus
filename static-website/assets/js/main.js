@@ -11,13 +11,15 @@
   // ============================================
   const ThemeManager = {
     init() {
-      this.themeToggle = document.getElementById('theme-toggle');
+      this.themeToggles = document.querySelectorAll('.theme-btn-action');
       this.currentTheme = localStorage.getItem('theme') || this.getSystemTheme();
       
       this.setTheme(this.currentTheme);
       
-      if (this.themeToggle) {
-        this.themeToggle.addEventListener('click', () => this.toggleTheme());
+      if (this.themeToggles.length > 0) {
+        this.themeToggles.forEach(btn => {
+          btn.addEventListener('click', () => this.toggleTheme());
+        });
       }
     },
     

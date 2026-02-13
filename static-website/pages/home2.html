@@ -51,13 +51,18 @@
           </button>
         </li>
         <li>
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
+          <button class="theme-toggle theme-btn-action desktop-only" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
             <i class="fas fa-moon dark-icon"></i>
             <i class="fas fa-sun light-icon"></i>
           </button>
         </li>
       </ul>
       
+      <button class="theme-toggle theme-btn-action mobile-only" aria-label="Toggle theme" style="margin-left: auto; margin-right: 10px;">
+        <i class="fas fa-moon dark-icon"></i>
+        <i class="fas fa-sun light-icon"></i>
+      </button>
+
       <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
         <span></span>
         <span></span>
@@ -67,7 +72,7 @@
   </nav>
 
   <!-- Premium Hero Section -->
-  <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('../assets/images/hero-premium-v2.png'); background-size: cover; background-position: center; min-height: 90vh; display: flex; align-items: center; color: white;">
+  <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('../assets/images/home2.png'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; color: white;">
     <div class="container">
       <div class="hero-content" style="max-width: 800px;">
         <span class="section-badge" style="background: var(--color-primary); color: white; padding: 6px 16px; border-radius: 50px; font-weight: 700; font-size: 14px; text-transform: uppercase; margin-bottom: 24px; display: inline-block;">World-Class Marina</span>
@@ -88,24 +93,25 @@
   </section>
 
   <!-- Luxury Stats -->
-  <section style="background: var(--color-bg-secondary); padding: 60px 0; border-bottom: 1px solid var(--color-border);">
+  <!-- Luxury Stats -->
+  <section style="background: var(--color-primary); padding: 60px 0; color: white;">
     <div class="container">
       <div class="grid grid-4 text-center">
         <div>
-          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">150+</div>
-          <p style="color: var(--color-text-secondary); font-weight: 600;">Luxury Berths</p>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: white; margin-bottom: 8px;">150+</div>
+          <p style="color: rgba(255,255,255,0.9); font-weight: 600;">Luxury Berths</p>
         </div>
         <div>
-          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">100ft</div>
-          <p style="color: var(--color-text-secondary); font-weight: 600;">Max Vessel Size</p>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: white; margin-bottom: 8px;">100ft</div>
+          <p style="color: rgba(255,255,255,0.9); font-weight: 600;">Max Vessel Size</p>
         </div>
         <div>
-          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">24/7</div>
-          <p style="color: var(--color-text-secondary); font-weight: 600;">Elite Security</p>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: white; margin-bottom: 8px;">24/7</div>
+          <p style="color: rgba(255,255,255,0.9); font-weight: 600;">Elite Security</p>
         </div>
         <div>
-          <div style="font-size: var(--text-4xl); font-weight: 800; color: var(--color-primary); margin-bottom: 8px;">5-Star</div>
-          <p style="color: var(--color-text-secondary); font-weight: 600;">Concierge Service</p>
+          <div style="font-size: var(--text-4xl); font-weight: 800; color: white; margin-bottom: 8px;">5-Star</div>
+          <p style="color: rgba(255,255,255,0.9); font-weight: 600;">Concierge Service</p>
         </div>
       </div>
     </div>
@@ -140,6 +146,52 @@
     </div>
   </section>
 
+  <!-- World-Class Amenities -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">On-Site Amenities</span>
+        <h2 class="section-title">Everything You Need</h2>
+        <p class="section-description">Our marina is equipped with top-tier facilities to ensure your vessel is always ready for the next voyage.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Facility 1 -->
+        <div class="card" style="padding: 0; overflow: hidden; border: none; box-shadow: var(--shadow-md);">
+           <div style="height: 200px; overflow: hidden; background: var(--color-bg-secondary); display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-gas-pump" style="font-size: 4rem; color: var(--color-primary);"></i>
+          </div>
+          <div style="padding: 24px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px;">High-Speed Fuel Dock</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary);">Premium diesel and ethanol-free gasoline with high-flow pumps to get you back on the water faster.</p>
+          </div>
+        </div>
+
+        <!-- Facility 2 -->
+        <div class="card" style="padding: 0; overflow: hidden; border: none; box-shadow: var(--shadow-md);">
+           <div style="height: 200px; overflow: hidden; background: var(--color-bg-secondary); display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-tools" style="font-size: 4rem; color: var(--color-primary);"></i>
+          </div>
+          <div style="padding: 24px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Full-Service Maintenance</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary);">Certified technicians available for engine repair, hull cleaning, and electronic systems troubleshooting.</p>
+          </div>
+        </div>
+
+        <!-- Facility 3 -->
+        <div class="card" style="padding: 0; overflow: hidden; border: none; box-shadow: var(--shadow-md);">
+           <div style="height: 200px; overflow: hidden; background: var(--color-bg-secondary); display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-wifi" style="font-size: 4rem; color: var(--color-primary);"></i>
+          </div>
+          <div style="padding: 24px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Smart Connectivity</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary);">Blazing fast Gigabit Wi-Fi and dedicated fiber connections available directly at your slip.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Feature Image Grid -->
   <section class="section bg-light">
     <div class="container">
@@ -167,21 +219,41 @@
     </div>
   </section>
 
+  <!-- Gallery Preview -->
+  <section class="section bg-light" style="padding-bottom: 80px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 40px;">
+        <span class="section-badge">Visual Tour</span>
+        <h2 class="section-title">The Marina Essence</h2>
+      </div>
+      
+      <div class="grid grid-3" style="margin-bottom: 40px;">
+        <div style="border-radius: 16px; overflow: hidden; height: 300px; box-shadow: var(--shadow-md);">
+          <img src="../assets/images/Illuminated Docks.webp" alt="Illuminated Docks" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div style="border-radius: 16px; overflow: hidden; height: 300px; box-shadow: var(--shadow-md);">
+          <img src="../assets/images/Marina Entrance.webp" alt="Marina Entrance" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div style="border-radius: 16px; overflow: hidden; height: 300px; box-shadow: var(--shadow-md);">
+          <img src="../assets/images/Harbor Reflections.webp" alt="Harbor Reflections" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="gallery.html" class="btn btn-primary btn-lg">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer" data-testid="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h4><i class="fas fa-anchor"></i> Harbor Marina</h4>
+          <h4><a href="../index.html" style="color: white; text-decoration: none;"><i class="fas fa-anchor"></i> Harbor Marina</a></h4>
           <p>
             The premier destination for luxury yacht docking and marine services. Secure your place at the coast's most elite port.
           </p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          </div>
         </div>
         
         <div class="footer-section">
@@ -217,7 +289,13 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Harbor Marina Elite. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p>&copy; 2026 Harbor Marina Elite. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
       </div>
     </div>
   </footer>

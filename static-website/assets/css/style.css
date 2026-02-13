@@ -83,6 +83,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -93,6 +94,19 @@ body {
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+/* Tablet Navbar Optimization */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    gap: var(--space-2);
+  }
+  .navbar-nav a {
+    font-size: var(--text-sm);
+  }
 }
 
 /* Typography */
@@ -157,8 +171,10 @@ img {
 .navbar {
   background-color: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   transition: box-shadow var(--transition-base);
 }
@@ -497,8 +513,19 @@ textarea.form-control {
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: var(--space-4);
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
   color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 .footer-bottom a {
@@ -514,7 +541,7 @@ textarea.form-control {
   display: flex;
   gap: var(--space-2);
   justify-content: center;
-  margin-top: var(--space-3);
+  margin-top: 0;
 }
 
 .social-link {
@@ -781,36 +808,69 @@ textarea.form-control {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Design - Unified Mobile/Tablet Experience */
+@media (max-width: 1024px) {
   :root {
-    --text-4xl: 2rem;
-    --text-3xl: 1.75rem;
+    --text-4xl: 2.25rem;
+    --text-3xl: 1.875rem;
     --text-2xl: 1.5rem;
   }
   
+  /* Navigation - Mobile/Tablet Drawer */
   .navbar-nav {
     position: fixed;
-    top: 65px;
+    top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100vh;
     background-color: var(--color-bg);
     flex-direction: column;
-    padding: var(--space-3);
-    box-shadow: var(--shadow-lg);
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-4);
+    z-index: 1100;
     display: none;
-    border-bottom: 1px solid var(--color-border);
+    opacity: 0;
+    transition: opacity var(--transition-base);
   }
-  
+
   .navbar-nav.active {
     display: flex;
+    opacity: 1;
   }
-  
+
+  /* Mobile Menu Header Brand */
+  .navbar-nav::before {
+    content: '⚓ Harbor Marina';
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+  }
+
+  .navbar-nav li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--space-2);
+  }
+
+  .navbar-nav a {
+    font-size: 1.25rem;
+    display: block;
+    padding: var(--space-2);
+  }
+
   .navbar-toggle {
     display: block;
+    z-index: 1200; /* Ensure active toggle (X) is above the menu */
+    position: relative;
   }
-  
+
   .navbar-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(5px, 6px);
   }
   
   .navbar-toggle.active span:nth-child(2) {
@@ -818,15 +878,24 @@ textarea.form-control {
   }
   
   .navbar-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(5px, -6px);
   }
-  
+
+  /* Grid Alignment - Center items on tablet/mobile using Flexbox for perfect centering of orphans */
+  .grid-2, .grid-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+
+  .grid-2 > *, .grid-3 > * {
+    flex: 1 1 300px;
+    max-width: 600px; /* Prevent single items from getting too wide */
+  }
+
   .hero-cta {
-    flex-direction: column;
-  }
-  
-  .btn {
-    width: 100%;
+    justify-content: center;
   }
   
   .section {
@@ -836,6 +905,51 @@ textarea.form-control {
   .section-lg {
     padding: var(--space-8) 0;
   }
+  
+  /* Toggle Visibility Classes */
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-only {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Footer responsiveness */
+  .footer-bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  /* Floating icons adjustments */
+  .floating-whatsapp {
+    left: 1rem;
+    bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .floating-phone {
+    right: 1rem;
+    bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .scroll-top {
+    right: 1rem;
+    bottom: 6rem;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.mobile-only {
+  display: none !important;
 }
 
 @media (max-width: 480px) {
@@ -847,8 +961,13 @@ textarea.form-control {
     padding: var(--space-8) 0 var(--space-6) 0;
   }
   
+  /* Force single column on very small screens */
   .grid-2, .grid-3, .grid-4 {
     grid-template-columns: 1fr;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
   }
 }
 
