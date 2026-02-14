@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Revenue Dashboard - Harbor Marina</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px;">
+          <i class="fas fa-anchor" style="font-size: 1.5rem;"></i>
+          <div class="sidebar-brand">Harbor Marina</div>
+        </a>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul style="padding: 0; margin: 0;">
+          <div class="nav-section-title">Main Menu</div>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">
+              <i class="fas fa-th-large"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="all-boats.html" class="nav-link">
+              <i class="fas fa-ship"></i>
+              <span>All Boats</span>
+              <span class="nav-badge">34</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="members.html" class="nav-link">
+              <i class="fas fa-users"></i>
+              <span>Members</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slip-rentals.html" class="nav-link">
+              <i class="fas fa-anchor"></i>
+              <span>Slip Rentals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="staff.html" class="nav-link">
+              <i class="fas fa-user-tie"></i>
+              <span>Staff</span>
+              <span class="nav-badge">6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="assignments.html" class="nav-link">
+              <i class="fas fa-tasks"></i>
+              <span>Assignments</span>
+              <span class="nav-badge" style="background: #f44336;">2</span>
+            </a>
+          </li>
+          
+          <div class="nav-section-title">Reports</div>
+          <li class="nav-item">
+            <a href="revenue.html" class="nav-link active">
+              <i class="fas fa-chart-line"></i>
+              <span>Revenue Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="certificates.html" class="nav-link">
+              <i class="fas fa-certificate"></i>
+              <span>Certificates</span>
+            </a>
+          </li>
+          
+          <div class="nav-section-title">Settings</div>
+          <li class="nav-item">
+            <a href="settings.html" class="nav-link">
+              <i class="fas fa-cog"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <i class="fas fa-home"></i>
+              <span>Back to Website</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link" id="logoutBtn">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h1>Revenue Dashboard</h1>
+        </div>
+        
+        <div class="top-bar-right">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+          </div>
+          
+          <a href="../index.html" class="icon-btn" title="Back to Home" style="text-decoration: none; color: inherit; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-home"></i>
+          </a>
+          
+          <button class="icon-btn theme-toggle theme-btn-action" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+          
+          <button class="icon-btn" id="rtl-toggle" aria-label="Toggle RTL">
+            <i class="fas fa-exchange-alt"></i>
+          </button>
+          
+          <button class="icon-btn">
+            <i class="fas fa-bell"></i>
+            <span class="badge"></span>
+          </button>
+          
+          <div class="user-menu">
+            <div class="user-avatar">MA</div>
+            <div class="user-info">
+              <div class="user-name">Marina Admin</div>
+              <div class="user-role">Administrator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="dashboard-content">
+        <!-- Overview Cards Specific to Revenue -->
+          <div class="overview-cards">
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <div>
+                  <div class="stat-label">Total Revenue</div>
+                  <div class="stat-value">$ 124,560</div>
+                  <div class="stat-subtitle">Current Year</div>
+                </div>
+                <div class="stat-icon green">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+              </div>
+            </div>
+             <div class="stat-card">
+              <div class="stat-card-header">
+                <div>
+                  <div class="stat-label">Monthly</div>
+                  <div class="stat-value">$ 12,345</div>
+                  <div class="stat-subtitle">Current Month</div>
+                </div>
+                <div class="stat-icon blue">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+              </div>
+            </div>
+             <div class="stat-card">
+              <div class="stat-card-header">
+                <div>
+                  <div class="stat-label">Outstanding</div>
+                  <div class="stat-value">$ 4,500</div>
+                  <div class="stat-subtitle">Unpaid Invoices</div>
+                </div>
+                <div class="stat-icon red">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+              </div>
+            </div>
+             <div class="stat-card">
+              <div class="stat-card-header">
+                <div>
+                  <div class="stat-label">Projected</div>
+                  <div class="stat-value">$ 135,000</div>
+                  <div class="stat-subtitle">End of Year Projection</div>
+                </div>
+                <div class="stat-icon orange">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charts -->
+          <div class="charts-grid">
+             <!-- Revenue Summary -->
+            <div class="chart-card">
+              <div class="chart-header">
+                <h3 class="chart-title">Revenue Breakdown</h3>
+                 <p class="chart-subtitle">By Service Category</p>
+              </div>
+               <div class="chart-container">
+                <canvas id="revenueBreakdownChart"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-card">
+               <div class="chart-header">
+                <h3 class="chart-title">Monthly Growth</h3>
+                <p class="chart-subtitle">Revenue vs Last Year</p>
+              </div>
+               <div class="chart-container">
+                <canvas id="monthlyGrowthChart"></canvas>
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Logout Confirmation Modal -->
+  <div class="modal-overlay" id="logoutModal">
+    <div class="modal-content">
+      <div class="modal-icon">
+        <i class="fas fa-sign-out-alt"></i>
+      </div>
+      <h2 class="modal-title">Confirm Logout</h2>
+      <p class="modal-text">Are you sure you want to logout from Harbor Marina?</p>
+      <div class="modal-actions">
+        <button class="modal-btn btn-cancel" id="cancelLogout">No, Stay</button>
+        <button class="modal-btn btn-confirm" id="confirmLogout">Yes, Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="../assets/js/main.js"></script>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+      document.getElementById('sidebar').classList.toggle('active');
+    });
+
+    // Logout Modal Logic
+    const logoutBtn = document.getElementById('logoutBtn');
+    const logoutModal = document.getElementById('logoutModal');
+    const cancelLogout = document.getElementById('cancelLogout');
+    const confirmLogout = document.getElementById('confirmLogout');
+
+    logoutBtn.addEventListener('click', () => {
+      logoutModal.classList.add('active');
+    });
+
+    cancelLogout.addEventListener('click', () => {
+      logoutModal.classList.remove('active');
+    });
+
+    // Close modal when clicking outside
+    logoutModal.addEventListener('click', (e) => {
+      if (e.target === logoutModal) {
+        logoutModal.classList.remove('active');
+      }
+    });
+
+    confirmLogout.addEventListener('click', () => {
+      logoutModal.querySelector('.modal-content').style.transform = 'scale(0.9)';
+      logoutModal.querySelector('.modal-content').style.opacity = '0';
+      setTimeout(() => {
+        window.location.href = '../index.html';
+      }, 300);
+    });
+
+    // Charts
+    const revenueCtx = document.getElementById('revenueBreakdownChart').getContext('2d');
+    new Chart(revenueCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Slips', 'Maintenance', 'Fuel', 'Store'],
+        datasets: [{
+          data: [60, 20, 15, 5],
+          backgroundColor: ['#667eea', '#28C76F', '#ff9800', '#f44336'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+
+    const growthCtx = document.getElementById('monthlyGrowthChart').getContext('2d');
+    new Chart(growthCtx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          label: '2025 Revenue',
+          data: [12000, 15000, 14000, 18000, 22000, 25000],
+          borderColor: '#667eea',
+          tension: 0.4
+        }, {
+          label: '2024 Revenue',
+          data: [10000, 12000, 13000, 15000, 19000, 21000],
+           borderColor: '#a0aec0',
+           borderDash: [5, 5],
+           tension: 0.4
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom' }
+        },
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

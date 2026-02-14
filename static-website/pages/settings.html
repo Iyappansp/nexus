@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Settings - Harbor Marina</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px;">
+          <i class="fas fa-anchor" style="font-size: 1.5rem;"></i>
+          <div class="sidebar-brand">Harbor Marina</div>
+        </a>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul style="padding: 0; margin: 0;">
+          <div class="nav-section-title">Main Menu</div>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">
+              <i class="fas fa-th-large"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="all-boats.html" class="nav-link">
+              <i class="fas fa-ship"></i>
+              <span>All Boats</span>
+              <span class="nav-badge">34</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="members.html" class="nav-link">
+              <i class="fas fa-users"></i>
+              <span>Members</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slip-rentals.html" class="nav-link">
+              <i class="fas fa-anchor"></i>
+              <span>Slip Rentals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="staff.html" class="nav-link">
+              <i class="fas fa-user-tie"></i>
+              <span>Staff</span>
+              <span class="nav-badge">6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="assignments.html" class="nav-link">
+              <i class="fas fa-tasks"></i>
+              <span>Assignments</span>
+              <span class="nav-badge" style="background: #f44336;">2</span>
+            </a>
+          </li>
+          
+          <div class="nav-section-title">Reports</div>
+          <li class="nav-item">
+            <a href="revenue.html" class="nav-link">
+              <i class="fas fa-chart-line"></i>
+              <span>Revenue Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="certificates.html" class="nav-link">
+              <i class="fas fa-certificate"></i>
+              <span>Certificates</span>
+            </a>
+          </li>
+          
+          <div class="nav-section-title">Settings</div>
+          <li class="nav-item">
+            <a href="settings.html" class="nav-link active">
+              <i class="fas fa-cog"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <i class="fas fa-home"></i>
+              <span>Back to Website</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link" id="logoutBtn">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h1>Settings</h1>
+        </div>
+        
+        <div class="top-bar-right">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search settings...">
+          </div>
+          
+          <a href="../index.html" class="icon-btn" title="Back to Home" style="text-decoration: none; color: inherit; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-home"></i>
+          </a>
+          
+          <button class="icon-btn theme-toggle theme-btn-action" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+          
+          <button class="icon-btn" id="rtl-toggle" aria-label="Toggle RTL">
+            <i class="fas fa-exchange-alt"></i>
+          </button>
+          
+          <button class="icon-btn">
+            <i class="fas fa-bell"></i>
+            <span class="badge"></span>
+          </button>
+          
+          <div class="user-menu">
+            <div class="user-avatar">MA</div>
+            <div class="user-info">
+              <div class="user-name">Marina Admin</div>
+              <div class="user-role">Administrator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Content -->
+      <div class="dashboard-content">
+        <!-- Profile Settings -->
+        <div class="chart-card">
+            <div class="chart-header">
+              <h3 class="chart-title">Profile Settings</h3>
+              <p class="chart-subtitle">Update your personal information</p>
+            </div>
+            
+            <form>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName" value="Marina">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" value="Admin">
+                </div>
+              </div>
+               <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" value="admin@harbormarina.com">
+              </div>
+               <button type="submit" class="btn btn-primary" style="font-weight: 600;">Save Changes</button>
+            </form>
+        </div>
+
+        <div class="settings-grid">
+           <!-- Notification Settings -->
+           <div class="chart-card">
+              <div class="chart-header">
+                <h3 class="chart-title">Notifications</h3>
+                <p class="chart-subtitle">Manage your alerts</p>
+              </div>
+              
+              <div>
+                <div class="form-check form-switch mb-3">
+                  <input class="form-check-input" type="checkbox" id="emailNotif" checked>
+                  <label class="form-check-label" for="emailNotif">Email Notifications</label>
+                </div>
+                <div class="form-check form-switch mb-3">
+                  <input class="form-check-input" type="checkbox" id="smsNotif">
+                  <label class="form-check-label" for="smsNotif">SMS Notifications</label>
+                </div>
+                 <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="deskNotif" checked>
+                  <label class="form-check-label" for="deskNotif">Desktop Alerts</label>
+                </div>
+              </div>
+           </div>
+
+           <!-- Appearance -->
+           <div class="chart-card">
+              <div class="chart-header">
+                <h3 class="chart-title">Appearance</h3>
+                <p class="chart-subtitle">Customize dashboard look</p>
+              </div>
+               <div>
+                  <div class="form-group">
+                    <label class="form-label">Theme Preference</label>
+                    <select class="form-select">
+                      <option selected>System Default</option>
+                      <option value="1">Light Mode</option>
+                      <option value="2">Dark Mode</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Language</label>
+                    <select class="form-select">
+                      <option selected>English (US)</option>
+                      <option value="1">Spanish</option>
+                      <option value="2">French</option>
+                    </select>
+                  </div>
+               </div>
+           </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Logout Confirmation Modal -->
+  <div class="modal-overlay" id="logoutModal">
+    <div class="modal-content">
+      <div class="modal-icon">
+        <i class="fas fa-sign-out-alt"></i>
+      </div>
+      <h2 class="modal-title">Confirm Logout</h2>
+      <p class="modal-text">Are you sure you want to logout from Harbor Marina?</p>
+      <div class="modal-actions">
+        <button class="modal-btn btn-cancel" id="cancelLogout">No, Stay</button>
+        <button class="modal-btn btn-confirm" id="confirmLogout">Yes, Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="../assets/js/main.js"></script>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+      document.getElementById('sidebar').classList.toggle('active');
+    });
+
+    // Logout Modal Logic
+    const logoutBtn = document.getElementById('logoutBtn');
+    const logoutModal = document.getElementById('logoutModal');
+    const cancelLogout = document.getElementById('cancelLogout');
+    const confirmLogout = document.getElementById('confirmLogout');
+
+    logoutBtn.addEventListener('click', () => {
+      logoutModal.classList.add('active');
+    });
+
+    cancelLogout.addEventListener('click', () => {
+      logoutModal.classList.remove('active');
+    });
+
+    // Close modal when clicking outside
+    logoutModal.addEventListener('click', (e) => {
+      if (e.target === logoutModal) {
+        logoutModal.classList.remove('active');
+      }
+    });
+
+    confirmLogout.addEventListener('click', () => {
+      logoutModal.querySelector('.modal-content').style.transform = 'scale(0.9)';
+      logoutModal.querySelector('.modal-content').style.opacity = '0';
+      setTimeout(() => {
+        window.location.href = '../index.html';
+      }, 300);
+    });
+  </script>
+</body>
+</html>
