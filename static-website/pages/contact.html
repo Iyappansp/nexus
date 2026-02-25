@@ -36,15 +36,27 @@
       </a>
       
       <ul class="navbar-nav" data-testid="navbar-menu">
-        <li><a href="../index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="../index.html" data-testid="nav-home">Home 1</a></li>
         <li><a href="home2.html" data-testid="nav-home2">Home 2</a></li>
         <li><a href="about.html" data-testid="nav-about">About</a></li>
         <li><a href="services.html" data-testid="nav-services">Services</a></li>
         <li><a href="tariff.html" data-testid="nav-tariff">Tariff</a></li>
         <li><a href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
         <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
-        <li><a href="dashboard.html" data-testid="nav-dashboard" style="color: var(--color-primary); font-weight: 600;">Dashboard</a></li>
-        <li><a href="login.html" data-testid="nav-login" style="color: var(--color-success); font-weight: 600;">Login</a></li>
+        <li><a href="dashboard.html" data-testid="nav-dashboard" class="nav-btn nav-btn-primary">Dashboard</a></li>
+        <li><a href="login.html" data-testid="nav-login" class="nav-btn nav-btn-success">Login</a></li>
+        <li class="profile-dropdown">
+          <div class="profile-trigger">
+            <div class="profile-avatar">MA</div>
+            <i class="fas fa-chevron-down" style="font-size: 0.8rem; color: var(--color-text-muted);"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="dashboard.html" class="dropdown-item"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a href="login.html" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+          </ul>
+        </li>
         <li>
           <button class="theme-toggle" id="rtl-toggle" aria-label="Toggle RTL" data-testid="rtl-toggle" title="Toggle RTL Layout">
             <i class="fas fa-exchange-alt"></i>
@@ -76,7 +88,7 @@
     <div class="container">
       <div class="hero-content">
         <nav class="breadcrumb">
-          <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
+          <a href="../index.html">Home 1</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
         </nav>
         <h1 data-testid="contact-title" style="color: white;">Contact Our Marina Team</h1>
         <p class="hero-description" data-testid="contact-description" style="color: rgba(255,255,255,0.9);">
@@ -393,7 +405,7 @@
         <div class="footer-section">
           <h4>Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">Home 1</a></li>
             <li><a href="about.html">About Marina</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="tariff.html">Tariff</a></li>

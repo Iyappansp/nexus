@@ -35,7 +35,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
       position: relative;
       overflow: hidden;
     }
@@ -128,8 +128,8 @@
     }
     
     .form-control:focus {
-      border-color: #667eea;
-      box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 4px rgba(37, 99, 234, 0.1);
       background: rgba(255, 255, 255, 1);
     }
     
@@ -184,7 +184,7 @@
       border-radius: 12px;
       font-weight: 600;
       font-size: 16px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
       border: none;
       color: white;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -192,7 +192,7 @@
     
     .btn-login:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+      box-shadow: 0 8px 20px rgba(37, 99, 234, 0.4);
       color: white;
     }
     
@@ -261,7 +261,7 @@
     }
     
     .forgot-link {
-      color: #667eea;
+      color: var(--color-primary);
       text-decoration: none;
       font-weight: 600;
     }
@@ -278,7 +278,7 @@
     }
     
     .auth-footer a {
-      color: #667eea;
+      color: var(--color-primary);
       font-weight: 600;
       text-decoration: none;
     }
@@ -306,7 +306,7 @@
     }
     
     .rtl-toggle-btn:hover {
-      background: #667eea;
+      background: var(--color-primary);
       color: white;
       transform: scale(1.05);
     }
@@ -320,7 +320,7 @@
 <body>
 
   <!-- Theme Toggle Button -->
-  <button class="rtl-toggle-btn theme-btn-action" style="right: auto; left: 20px;" id="theme-toggle" aria-label="Toggle theme" title="Toggle Theme">
+  <button class="rtl-toggle-btn theme-toggle theme-btn-action" style="right: auto; left: 20px;" id="theme-toggle" aria-label="Toggle theme" title="Toggle Theme">
     <i class="fas fa-moon dark-icon"></i>
     <i class="fas fa-sun light-icon"></i>
   </button>

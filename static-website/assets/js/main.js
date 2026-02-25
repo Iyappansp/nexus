@@ -96,13 +96,15 @@
     },
     
     toggleNav() {
-      this.nav.classList.toggle('active');
+      const isActive = this.nav.classList.toggle('active');
       this.toggle.classList.toggle('active');
+      document.body.style.overflow = isActive ? 'hidden' : '';
     },
     
     closeNav() {
       this.nav.classList.remove('active');
       this.toggle.classList.remove('active');
+      document.body.style.overflow = '';
     }
   };
 
