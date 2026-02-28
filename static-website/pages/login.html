@@ -319,11 +319,15 @@
 </head>
 <body>
 
-  <!-- Theme Toggle Button -->
-  <button class="rtl-toggle-btn theme-toggle theme-btn-action" style="right: auto; left: 20px;" id="theme-toggle" aria-label="Toggle theme" title="Toggle Theme">
-    <i class="fas fa-moon dark-icon"></i>
-    <i class="fas fa-sun light-icon"></i>
-  </button>
+  <!-- Theme Toggle -->
+  <div class="theme-switch-group" style="position: fixed; top: 20px; left: 20px; z-index: 1000; padding: 6px;">
+    <button class="theme-switch-btn theme-btn-light" aria-label="Light Mode" title="Light Mode">
+      <i class="fas fa-sun"></i>
+    </button>
+    <button class="theme-switch-btn theme-btn-dark" aria-label="Dark Mode" title="Dark Mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
 
   <!-- RTL Toggle Button -->
   <button class="rtl-toggle-btn" id="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL Layout">

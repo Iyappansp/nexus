@@ -12,13 +12,30 @@
   const ThemeManager = {
     init() {
       this.themeToggles = document.querySelectorAll('.theme-btn-action');
+      this.lightBtns = document.querySelectorAll('.theme-btn-light');
+      this.darkBtns = document.querySelectorAll('.theme-btn-dark');
       this.currentTheme = localStorage.getItem('theme') || this.getSystemTheme();
       
       this.setTheme(this.currentTheme);
       
+      // Traditional toggles
       if (this.themeToggles.length > 0) {
         this.themeToggles.forEach(btn => {
           btn.addEventListener('click', () => this.toggleTheme());
+        });
+      }
+
+      // Explicit light mode buttons
+      if (this.lightBtns.length > 0) {
+        this.lightBtns.forEach(btn => {
+          btn.addEventListener('click', () => this.setTheme('light'));
+        });
+      }
+
+      // Explicit dark mode buttons
+      if (this.darkBtns.length > 0) {
+        this.darkBtns.forEach(btn => {
+          btn.addEventListener('click', () => this.setTheme('dark'));
         });
       }
     },
@@ -33,11 +50,22 @@
       document.documentElement.setAttribute('data-theme', theme);
       localStorage.setItem('theme', theme);
       this.currentTheme = theme;
+      this.updateActiveButtons();
     },
     
     toggleTheme() {
       const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
       this.setTheme(newTheme);
+    },
+
+    updateActiveButtons() {
+      // Add 'active' class to the button corresponding to the current theme
+      this.lightBtns.forEach(btn => {
+        btn.classList.toggle('active', this.currentTheme === 'light');
+      });
+      this.darkBtns.forEach(btn => {
+        btn.classList.toggle('active', this.currentTheme === 'dark');
+      });
     }
   };
 

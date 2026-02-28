@@ -43,25 +43,41 @@
         <li><a href="tariff.html" data-testid="nav-tariff">Tariff</a></li>
         <li><a href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
         <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
-        <li><a href="dashboard.html" data-testid="nav-dashboard" style="color: var(--color-primary); font-weight: 600;">Dashboard</a></li>
-        <li><a href="login.html" data-testid="nav-login" style="color: var(--color-success); font-weight: 600;">Login</a></li>
+        <li class="profile-dropdown">
+          <div class="profile-trigger">
+            <div class="profile-avatar">MA</div>
+            <i class="fas fa-chevron-down" style="font-size: 0.8rem; color: var(--color-text-muted);"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="dashboard.html" class="dropdown-item"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a href="login.html" class="dropdown-item"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+          </ul>
+        </li>
         <li>
           <button class="theme-toggle" id="rtl-toggle" aria-label="Toggle RTL" data-testid="rtl-toggle" title="Toggle RTL Layout">
             <i class="fas fa-exchange-alt"></i>
           </button>
         </li>
         <li>
-          <button class="theme-toggle theme-btn-action desktop-only" id="theme-toggle" aria-label="Toggle theme" data-testid="theme-toggle">
-            <i class="fas fa-moon dark-icon"></i>
-            <i class="fas fa-sun light-icon"></i>
-          </button>
+          <div class="theme-switch-group desktop-only">
+            <button class="theme-switch-btn theme-btn-light" aria-label="Light Mode" title="Light Mode">
+              <i class="fas fa-sun"></i>
+            </button>
+            <button class="theme-switch-btn theme-btn-dark" aria-label="Dark Mode" title="Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
         </li>
       </ul>
       
-      <button class="theme-toggle theme-btn-action mobile-only" aria-label="Toggle theme" style="margin-left: auto; margin-right: 10px;">
-        <i class="fas fa-moon dark-icon"></i>
-        <i class="fas fa-sun light-icon"></i>
-      </button>
+      <div class="theme-switch-group mobile-only" style="margin-left: auto; margin-right: 10px;">
+        <button class="theme-switch-btn theme-btn-light" aria-label="Light Mode">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="theme-switch-btn theme-btn-dark" aria-label="Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
 
       <button class="navbar-toggle" aria-label="Toggle navigation" data-testid="mobile-menu-toggle">
         <span></span>
