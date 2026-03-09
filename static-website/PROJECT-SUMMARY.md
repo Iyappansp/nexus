@@ -187,11 +187,11 @@ A **production-ready, enterprise-grade static website** built entirely with HTML
 <link href="https://fonts.googleapis.com/css2?family=YourFont..." rel="stylesheet">
 ```
 
-### Add Your Logo
+### Branding & Identity
 ```html
-<!-- Replace rocket icon in navbar -->
+<!-- Text-based logo with anchor icon -->
 <a href="index.html" class="navbar-brand">
-  <img src="assets/images/logo.png" alt="Company">
+  <i class="fas fa-anchor"></i> Harbor Marina
 </a>
 ```
 

@@ -113,14 +113,14 @@ Update CSS:
 }
 ```
 
-### Add Your Logo
-1. Place logo image in `assets/images/logo.png`
-2. Replace in navbar:
+### Branding & Identity
+The website uses a text-based logo with a Font Awesome anchor icon:
 ```html
 <a href="index.html" class="navbar-brand">
-  <img src="assets/images/logo.png" alt="Company" style="height: 40px;">
+  <i class="fas fa-anchor"></i> Harbor Marina
 </a>
 ```
+To change the company name, simply search and replace "Harbor Marina" in all files.
 
 ## 📊 Performance Checklist
 
