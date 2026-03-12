@@ -89,7 +89,7 @@ html {
 body {
   font-family: var(--font-primary);
   font-size: var(--text-base);
-  line-height: 1.6;
+  line-height: 1.8;
   color: var(--color-text);
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
@@ -126,8 +126,10 @@ h5 { font-size: var(--text-lg); }
 h6 { font-size: var(--text-base); }
 
 p {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   color: var(--color-text-secondary);
+  text-align: justify;
+  letter-spacing: 0.015em;
 }
 
 a {
@@ -423,6 +425,9 @@ img {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-4);
   max-width: 600px;
+  text-align: justify;
+  line-height: 1.8;
+  letter-spacing: 0.015em;
 }
 
 .hero-cta {
@@ -514,7 +519,10 @@ img {
 
 .card-text {
   color: var(--color-text-secondary);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
+  text-align: justify;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
 /* Grid System */
@@ -563,6 +571,9 @@ img {
 .section-description {
   font-size: var(--text-lg);
   color: var(--color-text-secondary);
+  text-align: justify;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
 }
 
 /* Form Elements */
@@ -723,6 +734,7 @@ textarea.form-control {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-3);
   font-style: italic;
+  text-align: justify;
 }
 
 .testimonial-author {
@@ -798,6 +810,7 @@ textarea.form-control {
 
 .cta-section p {
   color: rgba(255, 255, 255, 0.9);
+  text-align: justify;
   font-size: var(--text-lg);
   margin-bottom: var(--space-4);
 }
@@ -1252,4 +1265,28 @@ textarea.form-control {
 .breadcrumb i {
   font-size: 0.75rem;
   opacity: 0.5;
+}
+
+/* Premium List Styling */
+.premium-list {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-2);
+}
+
+.premium-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: var(--space-1);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.premium-list li i {
+  position: absolute;
+  left: 0;
+  top: 0.35rem; /* Better vertical alignment for icons */
+  color: var(--color-primary);
+  font-size: 0.9rem;
 }
